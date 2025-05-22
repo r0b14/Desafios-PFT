@@ -7,7 +7,6 @@ print("---------------------------------------")
 # Lista que vai armazenar os dançarinos
 dancarinos = []
 
-# Repetição para cadastrar mais de um dançarino
 while True:
     nome = input("Digite o nome do dançarino: ")
     habilidades = input("Digite as habilidades (separe por vírgula): ")
