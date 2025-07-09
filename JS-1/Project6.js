@@ -103,3 +103,6 @@ if (pedido != "") {
 
 console.log("");
 console.log("Para fazer outros pedidos, mude os valores das variáveis 'item1', 'item2' e 'item3'!");
+
+//C
+//A

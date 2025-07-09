@@ -33,3 +33,6 @@ if (idade2 >= 60) {
 
 console.log("");
 console.log("Para testar outros valores, mude as variáveis 'idade1', 'idade2' e 'valor' no código!");
+
+//B
+//A

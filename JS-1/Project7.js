@@ -125,3 +125,7 @@ console.log("=== RESULTADO FINAL ===");
 console.log("A palavra secreta era: " + palavraSecreta);
 console.log("");
 console.log("Para jogar novamente, mude os valores das variáveis 'tentativa1', 'tentativa2' e 'tentativa3'!");
+
+
+//D
+//A

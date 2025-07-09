@@ -27,3 +27,6 @@ if (opcao == 1) {
 
 console.log("");
 console.log("Para ver outras mulheres, mude o valor da variável 'opcao' no código!");
+
+//C
+//B
