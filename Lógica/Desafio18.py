@@ -37,3 +37,4 @@ def explorar_floresta():
 
 # Iniciar o programa
 explorar_floresta()
+w
