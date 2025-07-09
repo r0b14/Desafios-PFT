@@ -100,3 +100,7 @@ if (tipo4 == tipoBuscado) {
 
 console.log("");
 console.log("Para buscar outros tipos, mude o valor da variável 'tipoBuscado'!");
+
+
+//B
+//D
