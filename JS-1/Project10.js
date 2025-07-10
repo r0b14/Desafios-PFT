@@ -130,3 +130,6 @@ console.log("Array 'opcoes': " + opcoes);
 console.log("Array 'escolhaJogador': " + escolhaJogador);
 console.log("Array 'escolhaComputador': " + escolhaComputador);
 console.log("Array 'resultados': " + resultados);
+
+//B
+//B
