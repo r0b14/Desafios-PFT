@@ -108,3 +108,6 @@ function lembreteAutomatico() {
 
 // Inicia o menu
 menuVacinas();
+
+// C
+// D
