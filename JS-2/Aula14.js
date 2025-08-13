@@ -16,7 +16,7 @@ function menuVacinas() {
 
     switch (opcao) {
       case "1":
-        importanciaVacina(() => alert("Obrigado por se informar sobre a importância da vacinação!"));
+        importanciaVacina();
         break;
       case "2":
         dataCampanha();
