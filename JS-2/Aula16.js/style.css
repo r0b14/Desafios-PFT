@@ -38,12 +38,12 @@
   position: absolute;
 }
 
-#rodas, #rodas-frente {
+#rodas, .rodas-frente {
   top: 100px;
   left: 20px;
 }
 
-#rodas, #rodas-tras {
+#rodas, .rodas-tras {
   top: 100px;
   right: 60px;
 }
