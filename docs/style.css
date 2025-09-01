@@ -52,6 +52,16 @@ blockquote {
     font-style: italic;
 }
 
+blockquote.emphasis {
+    background: #fffbe6;
+    border-left-color: #ffc107; /* Amber */
+    font-style: normal;
+}
+
+blockquote.emphasis strong {
+    color: #c66900;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -77,17 +87,27 @@ tr:nth-child(even) {
 }
 
 code {
-    background: #eee;
+    background: #e7e7e7;
+    color: #333;
     padding: 2px 4px;
     border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 pre {
-    background: #333;
+    background: #2d2d2d;
     color: #f8f8f2;
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Reset background for code tags inside pre blocks */
+pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
 }
 
 footer {
