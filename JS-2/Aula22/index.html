@@ -1,16 +1,30 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Aula22</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main>
-    <h1>Aula 22</h1>
-    <p>Conteúdo da Aula 22 — template padrão.</p>
-  </main>
-  <script src="script.js"></script>
+  <div id="container">
+    <img src="https://www.cesar.org.br/_next/image?url=%2Flogo.png&w=128&q=75" />
+  </div>
+  <div id="valor-input"></div>
+  <div>
+    <input type="text" id="input-text" value="Texto original">
+  </div>
+
+  <div>
+    <ul>
+      <li><button onclick="verificarValorInput()"> Pegar valor do input.</button></li>
+      <li><button onclick="alterarImagem()"> Alterar imagem </button></li>
+    </ul>
+
+  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>

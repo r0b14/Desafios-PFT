@@ -1,17 +1,32 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aula21</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Aula 21</title>
 </head>
+
 <body>
-  <main>
-    <h1>Aula 21</h1>
-    <p>Página de exemplo para a Aula 21.</p>
-    <div id="output"></div>
-  </main>
-  <script src="script.js"></script>
+
+  <div id="container">
+    <img src="https://www.cesar.org.br/_next/image?url=%2Flogo.png&w=128&q=75" />
+  </div>
+  <div id="valor-input"></div>
+  <div>
+    <input type="text" id="input-text" value="Texto original">
+  </div>
+
+  <div>
+    <ul>
+      <li><button onclick="verificarValorInput()"> Pegar valor do input.</button></li>
+      <li><button onclick="alterarImagem()"> Alterar imagem </button></li>
+    </ul>
+
+  </div>
+
+  <script src="./script.js"></script>
 </body>
+
 </html>
