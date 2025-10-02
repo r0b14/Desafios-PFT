@@ -1,3 +1,8 @@
 /* style.css para Aula23 */
 body{font-family:Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:1rem}
 main{max-width:780px;margin:2rem auto}
+
+/* Classe para destacar linhas com email Gmail */
+.gmail {
+  background-color: green;
+}
