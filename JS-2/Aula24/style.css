@@ -1,0 +1,32 @@
+/* style.css para Aula24 */
+body{font-family:Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:1rem}
+main{max-width:780px;margin:2rem auto}
+
+#controles {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.noticia {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+
+.noticia h3 {
+  margin-top: 0;
+}
+
+.remover {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
