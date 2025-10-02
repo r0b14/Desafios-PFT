@@ -1,8 +1,254 @@
-/* style.css para Aula23 */
-body{font-family:Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:1rem}
-main{max-width:780px;margin:2rem auto}
+/* style.css para Aula23 - Design Moderno e Atraente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Classe para destacar linhas com email Gmail */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Fundo animado com partículas */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+  animation: float 15s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(180deg); }
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    0 15px 30px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: slideUp 0.8s ease-out;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cabeçalho da tabela */
+th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  vertical-align: middle;
+}
+
+th:first-child {
+  width: 40%;
+}
+
+th:last-child {
+  width: 60%;
+}
+
+th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f093fb, #f5576c, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Células da tabela */
+td {
+  padding: 1.2rem 1.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1rem;
+  color: #2d3748;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+td:first-child {
+  font-weight: 500;
+  width: 40%;
+}
+
+td:last-child {
+  width: 60%;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+/* Efeito hover nas linhas */
+tr:not(:first-child):hover {
+  background: rgba(102, 126, 234, 0.08);
+  transform: translateX(3px);
+  box-shadow: 
+    3px 0 10px rgba(102, 126, 234, 0.1),
+    inset 3px 0 0 rgba(102, 126, 234, 0.3);
+}
+
+/* Classe para destacar linhas com email Gmail - Estilo Moderno */
 .gmail {
-  background-color: green;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.1) 0%, rgba(16, 185, 129, 0.15) 100%);
+  border-left: 4px solid #10b981;
+  position: relative;
+}
+
+.gmail::after {
+  content: '✓';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.1); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
+.gmail:hover {
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.15) 0%, rgba(16, 185, 129, 0.2) 100%);
+  transform: translateX(5px);
+  box-shadow: 
+    5px 0 15px rgba(16, 185, 129, 0.15),
+    inset 4px 0 0 rgba(16, 185, 129, 0.4);
+}
+
+/* Estilo especial para emails Gmail */
+.gmail td:last-child {
+  font-weight: 600;
+  color: #059669;
+  padding-right: 3rem;
+}
+
+.gmail td:last-child::before {
+  content: '📧 ';
+  font-size: 1rem;
+}
+
+/* Animação de entrada para as linhas */
+tr:not(:first-child) {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay progressivo para as animações */
+tr:nth-child(2) { animation-delay: 0.1s; }
+tr:nth-child(3) { animation-delay: 0.2s; }
+tr:nth-child(4) { animation-delay: 0.3s; }
+tr:nth-child(5) { animation-delay: 0.4s; }
+tr:nth-child(6) { animation-delay: 0.5s; }
+tr:nth-child(7) { animation-delay: 0.6s; }
+tr:nth-child(8) { animation-delay: 0.7s; }
+tr:nth-child(9) { animation-delay: 0.8s; }
+tr:nth-child(10) { animation-delay: 0.9s; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  th, td {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  table {
+    border-radius: 15px;
+  }
+  
+  tr:not(:first-child):hover {
+    transform: translateX(3px);
+  }
+}
+
+@media (max-width: 480px) {
+  th, td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .gmail::before {
+    right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
 }
