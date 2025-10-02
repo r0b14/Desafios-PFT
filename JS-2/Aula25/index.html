@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aula25</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Aula 25 - Gerenciamento de Tabela</h1>
+    <p>Adicione, remova e posicione itens na tabela dinamicamente.</p>
+    
+    <form id="formulario">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <button type="submit">Adicionar no Final</button>
+      <button type="button" id="adicionarTopo">Adicionar no Topo</button>
+    </form>
+    
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas serão adicionadas aqui -->
+      </tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

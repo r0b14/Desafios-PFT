@@ -1,0 +1,70 @@
+/* style.css para Aula25 */
+body{font-family:Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:1rem}
+main{max-width:780px;margin:2rem auto}
+
+form {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.remover {
+  background-color: #dc3545;
+}
+
+.remover:hover {
+  background-color: #c82333;
+}
+
+.acima, .abaixo {
+  background-color: #28a745;
+}
+
+.acima:hover, .abaixo:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.acoes {
+  white-space: nowrap;
+}
