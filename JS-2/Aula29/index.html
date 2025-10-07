@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aula29</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="formulario">
+      <h2>Salvar Informações</h2>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+
+      <button type="submit">Salvar</button>
+    </form>
+
+    <div class="dados-salvos">
+      <h3 id="nome-exibido">Nome não informado</h3>
+      <p id="sobrenome-exibido">Sobrenome não informado</p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
