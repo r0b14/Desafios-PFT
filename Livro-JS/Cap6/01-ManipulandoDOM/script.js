@@ -1,0 +1,1 @@
+// Alguns do manipuladores d
