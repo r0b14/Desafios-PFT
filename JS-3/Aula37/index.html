@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="pt-BR"><head></head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bagunçado - Teste do Prettier</title>
+<style>body{margin:0;padding:20px;font-family:Arial,sans-serif;background-color:#f0f0f0;}
+.container{max-width:800px;margin:0 auto;background:white;padding:30px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+h1{color:#333;text-align:center;margin-bottom:30px;}
+.form-group{margin-bottom:20px;}
+label{display:block;margin-bottom:5px;font-weight:bold;color:#555;}
+input[type="text"],input[type="email"],textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font-size:14px;}
+button{background-color:#007bff;color:white;padding:12px 30px;border:none;border-radius:4px;cursor:pointer;font-size:16px;}
+button:hover{background-color:#0056b3;}
+.card{background:#f9f9f9;padding:15px;margin-top:20px;border-left:4px solid #007bff;}.list-item{padding:10px;background:#fff;margin:10px 0;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1);}</style>
+</head>
+<body>
+<div class="container"><h1>Formulário Super Bagunçado</h1>
+<form id="meuForm"><div class="form-group">
+<label for="nome">Nome Completo:</label><input type="text" id="nome" name="nome" placeholder="Digite seu nome"></div>
+<div class="form-group"><label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="seu@email.com">
+</div><div class="form-group">
+<label for="mensagem">Mensagem:</label><textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea></div>
+<button type="submit">Enviar Formulário</button></form>
+<div class="card"><h2>Lista de Tarefas</h2><ul id="listaTarefas">
+<li class="list-item">Tarefa 1: Estudar JavaScript</li><li class="list-item">Tarefa 2: Praticar HTML/CSS</li>
+<li class="list-item">Tarefa 3: Aprender Prettier</li></ul></div>
+<div class="card"><h2>Informações Adicionais</h2><p>Este é um projeto <strong>propositalmente bagunçado</strong> para você testar o <em>Prettier</em> e ver como ele organiza o código automaticamente!</p>
+<p>Funcionalidades incluídas:</p><ul><li>Formulário de contato</li><li>Lista de tarefas</li>
+<li>Estilização CSS inline</li><li>JavaScript para interatividade</li></ul></div></div>
+<script>document.getElementById('meuForm').addEventListener('submit',function(e){e.preventDefault();const nome=document.getElementById('nome').value;const email=document.getElementById('email').value;
+const mensagem=document.getElementById('mensagem').value;if(!nome||!email||!mensagem){alert('Por favor, preencha todos os campos!');return;}
+console.log('Dados do formulário:',{nome,email,mensagem});alert(`Obrigado, ${nome}! Seu formulário foi enviado com sucesso.`);
+document.getElementById('meuForm').reset();});
+const listaTarefas=document.getElementById('listaTarefas');listaTarefas.addEventListener('click',function(e){if(e.target.tagName==='LI'){e.target.style.textDecoration=e.target.style.textDecoration==='line-through'?'none':'line-through';
+e.target.style.opacity=e.target.style.opacity==='0.5'?'1':'0.5';}});
+const adicionarTarefa=()=>{const novaTarefa=prompt('Digite a nova tarefa:');if(novaTarefa){const li=document.createElement('li');li.className='list-item';li.textContent=novaTarefa;
+listaTarefas.appendChild(li);}};
+const btnAdicionar=document.createElement('button');btnAdicionar.textContent='Adicionar Tarefa';btnAdicionar.style.marginTop='10px';
+btnAdicionar.onclick=adicionarTarefa;document.querySelector('.card').appendChild(btnAdicionar);</script>
+</body></html>
