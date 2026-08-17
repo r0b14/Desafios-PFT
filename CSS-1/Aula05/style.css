@@ -1,0 +1,136 @@
+/*
+    AULA 05 - OUTLINE
+
+    A propriedade outline desenha um contorno ao redor do elemento.
+    Diferente da border, o outline não ocupa espaço no layout.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #3d3028;
+    background-color: #fff7e6;
+}
+
+header {
+    padding: 34px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #914b2a;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 34px auto;
+    padding: 0 24px;
+}
+
+.receita {
+    margin-bottom: 42px;
+    padding: 26px;
+    background-color: #ffffff;
+    border: 2px solid #e0c3a7;
+    border-radius: 12px;
+}
+
+/* Cada nome de receita recebe uma cor diferente. */
+.receita-bolo h2 {
+    color: #d2691e;
+}
+
+.receita-sanduiche h2 {
+    color: #39733c;
+}
+
+.receita-macarrao h2 {
+    color: #b22e2e;
+}
+
+.receita h2 {
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+/*
+    O outline destaca as imagens sem mudar o tamanho delas.
+
+    outline: largura | estilo | cor;
+    outline-offset: distância entre a imagem e o contorno.
+*/
+.receita img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 30px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    outline: 5px solid #d9893d;
+    outline-offset: 4px;
+}
+
+/* Variações de outline para observar cores e estilos diferentes. */
+.receita-sanduiche img {
+    outline-color: #629b5f;
+    outline-style: dashed;
+}
+
+.receita-macarrao img {
+    outline-color: #c94a4a;
+    outline-style: double;
+}
+
+/* Fundo e borda dos parágrafos de ingredientes. */
+.ingredientes {
+    margin: 0 0 18px;
+    padding: 18px;
+    background-color: #fff0c7;
+    border: 2px solid #d5a33d;
+    border-radius: 8px;
+}
+
+/* Fundo e borda dos parágrafos com o modo de fazer. */
+.modo-preparo {
+    margin: 0;
+    padding: 18px;
+    background-color: #e6f4df;
+    border: 2px dashed #6f9c67;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #5d3423;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .receita {
+        padding: 18px;
+    }
+
+    .receita img {
+        height: 220px;
+        outline-width: 4px;
+        outline-offset: 3px;
+    }
+}
