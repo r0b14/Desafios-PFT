@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="titulo descricao">
+    <title id="titulo">Macarrão ao molho de tomate</title>
+    <desc id="descricao">Ilustração de um prato de macarrão com molho de tomate e manjericão.</desc>
+    <defs>
+        <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffe5d6"/><stop offset="1" stop-color="#e7b9a6"/>
+        </linearGradient>
+    </defs>
+    <rect width="900" height="500" fill="url(#fundo)"/>
+    <ellipse cx="450" cy="407" rx="315" ry="45" fill="#823d31" opacity=".18"/>
+    <ellipse cx="450" cy="305" rx="320" ry="155" fill="#fbfaf4" stroke="#d2c2b7" stroke-width="11"/>
+    <ellipse cx="450" cy="305" rx="248" ry="106" fill="#cf4935"/>
+    <g fill="none" stroke="#f4bd4d" stroke-width="16" stroke-linecap="round">
+        <path d="M282 289c83-99 280-91 346 14"/><path d="M297 323c95-91 248-74 307 8"/>
+        <path d="M337 355c84-69 202-52 244 6"/><path d="M339 258c73-58 183-59 236-4"/>
+        <path d="M375 229c56-27 126-26 171 7"/>
+    </g>
+    <g fill="#3f8a43">
+        <ellipse cx="380" cy="282" rx="20" ry="45" transform="rotate(55 380 282)"/>
+        <ellipse cx="546" cy="317" rx="20" ry="45" transform="rotate(-52 546 317)"/>
+        <ellipse cx="478" cy="254" rx="17" ry="38" transform="rotate(82 478 254)"/>
+    </g>
+    <g fill="#f7e4b5">
+        <circle cx="425" cy="328" r="6"/><circle cx="516" cy="279" r="6"/><circle cx="354" cy="340" r="6"/>
+    </g>
+</svg>

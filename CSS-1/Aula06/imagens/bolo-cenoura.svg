@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="titulo descricao">
+    <title id="titulo">Bolo de cenoura</title>
+    <desc id="descricao">Ilustração de uma fatia de bolo de cenoura com cobertura de chocolate.</desc>
+    <defs>
+        <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff0ca"/><stop offset="1" stop-color="#e8c68f"/>
+        </linearGradient>
+        <linearGradient id="massa" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f8a735"/><stop offset="1" stop-color="#df741d"/>
+        </linearGradient>
+    </defs>
+    <rect width="900" height="500" fill="url(#fundo)"/>
+    <ellipse cx="450" cy="402" rx="300" ry="40" fill="#8b5d37" opacity=".18"/>
+    <ellipse cx="450" cy="350" rx="310" ry="82" fill="#fffdf7" stroke="#d3c7b5" stroke-width="10"/>
+    <path d="M294 325 438 128 634 320Z" fill="url(#massa)" stroke="#c75f16" stroke-width="8"/>
+    <path d="M435 126c68 24 133 76 199 194l-28 19c-68-99-124-143-192-169z" fill="#59301f"/>
+    <path d="M418 158c56 17 121 61 181 154" fill="none" stroke="#7b4631" stroke-width="18" stroke-linecap="round"/>
+    <g fill="#ffd278" opacity=".75">
+        <circle cx="420" cy="230" r="8"/><circle cx="469" cy="268" r="7"/><circle cx="505" cy="311" r="8"/>
+    </g>
+</svg>

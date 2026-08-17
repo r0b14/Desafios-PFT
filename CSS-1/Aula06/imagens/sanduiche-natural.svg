@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="titulo descricao">
+    <title id="titulo">Sanduíche natural</title>
+    <desc id="descricao">Ilustração de um sanduíche natural com alface, tomate e cenoura.</desc>
+    <defs>
+        <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e9f5d8"/><stop offset="1" stop-color="#bdd6a8"/>
+        </linearGradient>
+        <linearGradient id="pao" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#efd49a"/><stop offset="1" stop-color="#c8944c"/>
+        </linearGradient>
+    </defs>
+    <rect width="900" height="500" fill="url(#fundo)"/>
+    <ellipse cx="450" cy="407" rx="295" ry="42" fill="#547552" opacity=".2"/>
+    <path d="M220 319 449 135l231 184z" fill="url(#pao)" stroke="#9c6b35" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M235 331c52-34 78 29 129-5s78 29 129-5 78 29 146-2l-24 45H257z" fill="#4e9a46"/>
+    <path d="M260 351h359l-25 38H286z" fill="#e95a43"/>
+    <path d="M286 387h308l-23 35H309z" fill="#f4b94d"/>
+    <path d="M309 420h262l-18 30H329z" fill="url(#pao)" stroke="#9c6b35" stroke-width="7"/>
+    <g fill="#fff1bd" opacity=".8">
+        <ellipse cx="400" cy="235" rx="7" ry="4"/><ellipse cx="477" cy="207" rx="7" ry="4"/>
+        <ellipse cx="523" cy="255" rx="7" ry="4"/><ellipse cx="343" cy="282" rx="7" ry="4"/>
+    </g>
+</svg>
