@@ -1,0 +1,192 @@
+/*
+    AULA 04 - BOX MODEL
+
+    Todo elemento HTML pode ser entendido como uma caixa formada por:
+
+    1. content: o conteúdo, como textos e imagens;
+    2. padding: o espaço interno ao redor do conteúdo;
+    3. border: a borda que envolve conteúdo e padding;
+    4. margin: o espaço externo que separa uma caixa das outras.
+*/
+
+/*
+    Com border-box, a largura informada já inclui o padding e a borda.
+    Essa regra facilita o controle do tamanho de todas as caixas.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #2f3542;
+    background-color: #f3f0ff;
+}
+
+/* Caixa do cabeçalho: conteúdo + padding. */
+header {
+    padding: 36px 20px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #5941a9;
+    border-bottom: 6px solid #3f2d82;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+/*
+    O conteúdo principal tem largura máxima de 900px.
+    A margem automática centraliza a caixa na página.
+*/
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Caixa de apresentação da autora. */
+.perfil {
+    margin-bottom: 28px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 3px solid #8c78d5;
+    border-radius: 12px;
+}
+
+/*
+    Esta caixa tem 130px no total porque usa border-box.
+    O tamanho inclui o conteúdo, o padding e a borda.
+*/
+.avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 22px;
+    padding: 31px 10px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #5941a9;
+    background-color: #e7e0ff;
+    border: 6px solid #8c78d5;
+    border-radius: 50%;
+}
+
+.perfil h2 {
+    margin: 0 0 16px;
+    color: #49358f;
+}
+
+.perfil p {
+    margin: 0 0 14px;
+    text-align: left;
+}
+
+.perfil p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo compartilhado pelas outras seções da biografia. */
+.caixa {
+    margin-bottom: 28px;
+    padding: 26px;
+    background-color: #ffffff;
+    border: 2px solid #c9bcef;
+    border-radius: 10px;
+}
+
+.caixa h2 {
+    margin: -26px -26px 22px;
+    padding: 14px 20px;
+    color: #ffffff;
+    background-color: #6d56bd;
+    border-bottom: 4px solid #49358f;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Espaço reservado para os marcadores da lista. */
+.lista-informacoes {
+    margin: 0;
+    padding-left: 26px;
+}
+
+.lista-informacoes li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.introducao-lista {
+    margin: 0 0 18px;
+}
+
+.lista-recomendacoes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Cada recomendação também é uma caixa completa do Box Model. */
+.lista-recomendacoes li {
+    margin-bottom: 14px;
+    padding: 16px;
+    background-color: #f5f2ff;
+    border-left: 6px solid #8068cc;
+}
+
+.lista-recomendacoes li:last-child {
+    margin-bottom: 0;
+}
+
+.lista-recomendacoes a {
+    color: #49358f;
+    font-weight: bold;
+}
+
+.lista-recomendacoes p {
+    margin: 6px 0 0;
+}
+
+/* Caixa da citação com margens, padding e borda próprios. */
+blockquote {
+    margin: 0 0 36px;
+    padding: 22px 28px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #49358f;
+    background-color: #e7e0ff;
+    border: 2px dashed #8068cc;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #342664;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Reduz o espaço interno das caixas em telas menores. */
+@media (max-width: 600px) {
+    .perfil,
+    .caixa {
+        padding: 20px;
+    }
+
+    .caixa h2 {
+        margin: -20px -20px 20px;
+    }
+}
