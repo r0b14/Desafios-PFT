@@ -6,16 +6,16 @@ function verificarValorInput() {
 
   // se houver qualquer texto, adiciona a classe 'temostexto', caso contrário remove
   if (valorInput.textContent && valorInput.textContent.trim() !== "") {
-    valorInput.classList.add('temostexto');
+    valorInput.classList.add("temostexto");
   } else {
-    valorInput.classList.remove('temostexto');
+    valorInput.classList.remove("temostexto");
   }
 
   // se o texto for exatamente 'Texto original', adiciona a classe 'active', caso contrário remove
-  if (valorInput.textContent === 'Texto original') {
-    valorInput.classList.add('active');
+  if (valorInput.textContent === "Texto original") {
+    valorInput.classList.add("active");
   } else {
-    valorInput.classList.remove('active');
+    valorInput.classList.remove("active");
   }
 
   // reseta o valor do input para o comportamento original
@@ -28,7 +28,7 @@ function alterarImagem() {
 }
 
 // Expor funções no escopo global para ambientes como jsdom/tests
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   window.verificarValorInput = verificarValorInput;
   window.alterarImagem = alterarImagem;
 }
