@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="titulo descricao">
+    <title id="titulo">Omelete de legumes</title>
+    <desc id="descricao">Ilustração de uma omelete com tomate, cenoura e folhas verdes.</desc>
+    <defs>
+        <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff1c7"/>
+            <stop offset="1" stop-color="#edc987"/>
+        </linearGradient>
+        <radialGradient id="omelete" cx="45%" cy="40%" r="65%">
+            <stop offset="0" stop-color="#ffe784"/>
+            <stop offset="1" stop-color="#e6a928"/>
+        </radialGradient>
+    </defs>
+    <rect width="900" height="500" fill="url(#fundo)"/>
+    <ellipse cx="450" cy="385" rx="310" ry="48" fill="#9c6b3f" opacity=".18"/>
+    <ellipse cx="450" cy="275" rx="305" ry="175" fill="#f7f1e7" stroke="#d1c4b3" stroke-width="12"/>
+    <ellipse cx="450" cy="275" rx="245" ry="126" fill="url(#omelete)"/>
+    <g fill="#d84b3e">
+        <circle cx="348" cy="245" r="32"/><circle cx="525" cy="222" r="28"/><circle cx="582" cy="307" r="30"/>
+    </g>
+    <g fill="#ef7c32">
+        <rect x="403" y="195" width="23" height="58" rx="8" transform="rotate(28 414 224)"/>
+        <rect x="465" y="285" width="23" height="58" rx="8" transform="rotate(-37 476 314)"/>
+        <rect x="300" y="298" width="23" height="52" rx="8" transform="rotate(55 311 324)"/>
+    </g>
+    <g fill="#4e8f45">
+        <ellipse cx="402" cy="322" rx="18" ry="42" transform="rotate(52 402 322)"/>
+        <ellipse cx="558" cy="260" rx="17" ry="40" transform="rotate(-50 558 260)"/>
+        <ellipse cx="454" cy="235" rx="15" ry="34" transform="rotate(80 454 235)"/>
+    </g>
+    <g fill="#fff8dc" opacity=".85">
+        <circle cx="375" cy="276" r="7"/><circle cx="497" cy="337" r="7"/><circle cx="619" cy="256" r="7"/>
+    </g>
+</svg>
