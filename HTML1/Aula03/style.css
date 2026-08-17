@@ -1,0 +1,139 @@
+/*
+    AULA 03 - LISTAS E TABELAS
+    O CSS ajuda na leitura, mas o foco está na estrutura criada pelo HTML.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #3e2723;
+    background-color: #fff8e8;
+}
+
+header {
+    padding: 34px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #6d3b2a;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 3px solid #d9913b;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 12px;
+    color: #6d3b2a;
+    font-weight: bold;
+}
+
+.receita {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.receita section,
+.conexoes {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 2px solid #e5c9a8;
+    border-radius: 8px;
+}
+
+.receita h2 {
+    margin-top: 0;
+    color: #8d3f25;
+}
+
+.resumo {
+    border-left: 7px solid #d9913b !important;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+details {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #fff3cd;
+    border-left: 5px solid #d9913b;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #b9997c;
+}
+
+th {
+    color: #ffffff;
+    background-color: #8d3f25;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff3e0;
+}
+
+.conexoes {
+    background-color: #eef7e8;
+    border-left: 7px solid #65934c;
+}
+
+.conexoes h2 {
+    margin-top: 0;
+    color: #3f6e31;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4e291e;
+}
+
+footer p {
+    margin: 0;
+}

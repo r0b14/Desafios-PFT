@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Deliciosas — Bolo de Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Receita de Bolo de Chocolate</h1>
+        <p>Uma receita simples para praticar listas e tabelas em HTML.</p>
+    </header>
+
+    <nav aria-label="Navegação da receita">
+        <a href="#ingredientes">Ingredientes</a>
+        <a href="#preparo">Modo de preparo</a>
+        <a href="#nutricao">Informações nutricionais</a>
+    </nav>
+
+    <main class="receita">
+        <section class="resumo">
+            <h2>Sobre a receita</h2>
+            <p>
+                Este bolo rende <strong>12 porções</strong> e leva aproximadamente
+                <strong>50 minutos</strong> para ficar pronto.
+            </p>
+        </section>
+
+        <!-- Lista não ordenada: a ordem dos ingredientes não altera seu significado. -->
+        <section id="ingredientes">
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>2 xícaras de farinha de trigo</li>
+                <li>1 e 1/2 xícara de açúcar</li>
+                <li>1 xícara de chocolate em pó</li>
+                <li>3 ovos</li>
+                <li>1 xícara de leite</li>
+                <li>3 colheres de manteiga</li>
+                <li>1 colher de fermento em pó</li>
+            </ul>
+        </section>
+
+        <!-- Lista ordenada: a sequência dos passos é importante. -->
+        <section id="preparo">
+            <h2>Modo de preparo</h2>
+            <ol>
+                <li>Preaqueça o forno a 180 °C.</li>
+                <li>Misture os ovos, o açúcar e a manteiga em uma tigela.</li>
+                <li>Acrescente o leite, a farinha e o chocolate em pó.</li>
+                <li>Misture até formar uma massa lisa e homogênea.</li>
+                <li>Adicione o fermento e mexa delicadamente.</li>
+                <li>Despeje a massa em uma forma untada.</li>
+                <li>Asse por aproximadamente 35 minutos.</li>
+            </ol>
+
+            <details>
+                <summary>Dica para verificar o ponto do bolo</summary>
+                <p>
+                    Espete um palito no centro do bolo. Se ele sair limpo, o bolo
+                    está pronto. Peça ajuda a um adulto ao usar o forno.
+                </p>
+            </details>
+        </section>
+
+        <!-- A tabela organiza dados em linhas e colunas. -->
+        <section id="nutricao">
+            <h2>Informações nutricionais</h2>
+            <p>Valores aproximados por porção.</p>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Informações nutricionais por porção</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nutriente</th>
+                            <th scope="col">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Valor energético</td>
+                            <td>285 kcal</td>
+                        </tr>
+                        <tr>
+                            <td>Carboidratos</td>
+                            <td>42 g</td>
+                        </tr>
+                        <tr>
+                            <td>Proteínas</td>
+                            <td>5 g</td>
+                        </tr>
+                        <tr>
+                            <td>Gorduras totais</td>
+                            <td>11 g</td>
+                        </tr>
+                        <tr>
+                            <td>Fibras alimentares</td>
+                            <td>2 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <aside class="conexoes">
+            <h2>Conexões com outros módulos</h2>
+            <ul>
+                <li>
+                    <strong>Lógica:</strong> o modo de preparo é um algoritmo,
+                    pois apresenta passos ordenados para atingir um resultado.
+                </li>
+                <li>
+                    <strong>JS-1:</strong> listas e linhas da tabela são elementos
+                    do DOM que podem ser selecionados e modificados.
+                </li>
+                <li>
+                    <strong>JS-2:</strong> ingredientes e nutrientes poderiam ser
+                    representados por arrays e objetos antes de aparecerem na tela.
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Miniprojeto da Aula 03 — Listas e tabelas em HTML.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

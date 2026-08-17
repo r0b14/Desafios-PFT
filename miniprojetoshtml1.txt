@@ -1,0 +1,112 @@
+--- Miniprojeto 1
+Bem-vindos ao Miniprojeto da nossa Aula 01!
+
+Neste projeto, você aplicará os conceitos de HTML para criar a estrutura de uma página web. Em grupos, vocês construirão uma página simples, usando as tags essenciais para organizar conteúdos básicos.
+
+A proposta é que cada grupo crie uma página com título, cabeçalho e dois parágrafos, utilizando as tags básicas do HTML de forma adequada. Este projeto promove a prática colaborativa e ajuda a consolidar a estrutura de um documento HTML. Aproveitem a oportunidade para aplicar o que aprenderam!
+
+Objetivo
+Promover o aprendizado colaborativo sobre a estrutura básica de um documento HTML, identificando e manipulando as principais tags (<html>, <head>, <body>), e entendendo como elas se relacionam para construir uma página web.
+
+Descrição
+Explorar os conceitos fundamentais das tags básicas de HTML. Os alunos trabalharão em grupos para criar e modificar uma estrutura básica de página HTML, discutindo as funções de cada tag e aplicando seus conhecimentos para desenvolver um exemplo prático. A atividade será realizada em grupos de 3 a 4 alunos e culminará com a apresentação e discussão dos projetos criados.
+
+Habilidade
+Compreender a estrutura e funcionalidade das tags básicas do HTML.
+Desenvolver habilidades práticas ao construir páginas HTML simples.
+Estimular o pensamento crítico ao explorar como as tags se relacionam e influenciam a exibição da página
+
+Ferramentas:
+Notebook / computador
+Editor de texto 
+Spaces - https://spaces.w3schools.com/space/
+Navegador web 
+
+Etapas:  
+Formação dos Grupos e Introdução às Tags Básicas
+a. Divida a turma em grupos de 3 a 4 alunos
+
+Desafio de Criação de Página HTML 
+a. Os alunos devem criar uma página HTML simples em grupo, utilizando as tags apresentadas.
+b. Eles devem incluir um título, um cabeçalho e pelo menos dois parágrafos.
+c. A página deve seguir a estrutura correta, respeitando o aninhamento das tags.
+Tarefa: Criar uma página com as seguintes características:
+Título na aba do navegador: "Projeto de Fundamentos HTML"
+Cabeçalho principal: "Bem-vindos ao Mundo do HTML"
+Parágrafos explicando brevemente o que é HTML e suas aplicações.
+
+
+--- Miniprojeto 2
+Bem-vindos ao Miniprojeto da nossa Aula 02!
+
+Neste projeto, você trabalhará em grupos para aplicar os princípios de design em uma página HTML. Cada grupo deverá criar uma página que aplique os conceitos de contraste, alinhamento, repetição e proximidade, estruturando o conteúdo de forma visualmente organizada e eficaz.
+
+O objetivo é que vocês experimentem o impacto desses princípios em layouts reais, desenvolvendo suas habilidades na criação de páginas atraentes e funcionais. Essa é uma ótima oportunidade para aprender na prática como o design influencia a navegação e a estética de uma página web
+
+Objetivo
+Promover a análise crítica de diferentes sites para entender como os princípios de design (contraste, alinhamento, repetição e proximidade) são aplicados na prática. Os alunos identificarão os elementos HTML em uso e construirão um esqueleto em blocos representando a estrutura básica de uma página web.
+
+Descrição
+Os alunos irão explorar e analisar um site, observando como os princípios de design são aplicados e como os elementos HTML estão organizados. Cada grupo escolherá um site para analisar em detalhes e, em seguida, irá recriar a estrutura básica do site em forma de esqueleto HTML, representando os principais blocos e elementos. A atividade será realizada em grupos de 3 a 4 alunos.
+
+Habilidade
+Desenvolver habilidades analíticas ao examinar o design de sites.
+Compreender como os princípios de design são aplicados na prática.
+Aprender a estruturar uma página HTML em blocos.
+
+Ferramentas
+Notebook / computador
+Navegador web 
+
+Etapas
+Formação dos Grupos e Introdução às Tags Básicas:
+a. Divida a turma em grupos de 3 a 4 alunos
+
+Escolha e Análise de Site
+a. Cada grupo deve escolher um site (podem ser site de notícias, e-commerce, portfólios, etc.).
+b. Os grupos devem identificar e discutir como cada site aplica os princípios de design, focando nos seguintes pontos:
+Contraste: Como as cores e elementos se destacam?
+Alinhamento: Como os elementos estão organizados na página?
+Repetição: Que elementos visuais são repetidos para criar consistência?
+Proximidade: Como os elementos relacionados estão agrupados?
+
+Construção do Esqueleto HTML:
+a. Com base na análise, cada grupo deve desenhar a anatomia/esqueleto do HTML, representando a estrutura básica do site escolhido.
+A imagem que ilustra a anatomia e o esqueleto do HTML para a estrutura básica do site está anexada
+
+--- Miniprojeto 3
+Bem-vindos ao Miniprojeto da nossa Aula 03! 
+
+Neste projeto, você criará um site interativo de receitas, usando HTML para listar ingredientes e etapas e organizar informações nutricionais em tabelas. Este exercício permitirá que você aplique as tags de formatação aprendidas e desenvolva habilidades para estruturar conteúdos de forma clara e visualmente atraente.
+
+Sua tarefa será criar uma página de receita com listas ordenadas e não ordenadas e uma tabela com informações nutricionais. Esta é uma ótima oportunidade para praticar e experimentar o uso de listas e tabelas em HTML!
+
+Objetivo
+Desenvolver habilidades para criar listas ordenadas e não ordenadas, construir tabelas simples e aplicar estilos básicos em HTML, enquanto os alunos criam um site de receitas interativo.
+
+Descrição
+Os alunos irão criar um site de receitas que não apenas lista ingredientes e etapas, mas também organiza informações de forma clara e visualmente atraente. O site incluirá seções para listas de ingredientes, etapas de preparo, e uma tabela com informações nutricionais.
+
+Habilidade
+Compreender e aplicar as tags <ol>, <ul>, <table>, <tr>, <td>, e <th> em HTML.
+Estruturar informações de forma organizada utilizando listas e tabelas.
+
+Ferramentas
+Notebook / computador
+Editor de texto 
+Spaces - https://spaces.w3schools.com/space/
+Navegador web 
+
+Etapas
+Formação dos Grupos e Introdução às Tags Básicas:
+a. Divida a turma em grupos de 3 a 4 alunos, indiquem que mantenham a equipe da aula anterior.
+
+Estruturação da Página HTML
+a. criar um novo arquivo HTML seguindo as instruções abaixo:
+    i. Inicie com a declaração do tipo de documento e as tags <html>, <head>, e <body>.
+    ii. Dentro do <head>, inclua um <title> para a página (ex: "Receitas Deliciosas").
+    iii. No <body>, os alunos devem:
+Adicionar um título principal usando <h1> (ex: "Receita de Bolo de Chocolate").
+Criar uma seção de ingredientes usando uma lista não ordenada (<ul>) para listar os ingredientes necessários.
+Criar uma seção de etapas de preparo usando uma lista ordenada (<ol>), descrevendo cada passo.
+Incluir uma tabela usando <table> para apresentar informações nutricionais (ex: calorias, carboidratos, proteínas) com as tags <tr>, <td>, e <th>.

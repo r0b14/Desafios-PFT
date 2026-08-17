@@ -1,0 +1,68 @@
+/*
+    AULA 01 - ESTRUTURA BÁSICA DO HTML
+    O CSS é simples porque o foco desta aula está nas tags do documento.
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f4f8fb;
+}
+
+header {
+    padding: 32px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1565c0;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section,
+.conexao {
+    margin-bottom: 22px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #42a5f5;
+}
+
+section h2,
+.conexao h2 {
+    margin-top: 0;
+    color: #0d47a1;
+}
+
+.conexao {
+    background-color: #e3f2fd;
+    border-left-color: #ff9800;
+}
+
+.conexao li {
+    margin-bottom: 8px;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0d47a1;
+}
+
+footer p {
+    margin: 0;
+}

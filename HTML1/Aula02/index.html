@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Design — Portal de Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Exemplo de cabeçalho que seria encontrado em um portal de notícias. -->
+    <header class="cabecalho-site">
+        <div class="conteudo-limitado">
+            <p class="marca">Notícia Agora</p>
+            <p>Informação clara para ajudar você a entender o dia.</p>
+        </div>
+    </header>
+
+    <nav class="menu" aria-label="Navegação principal">
+        <div class="conteudo-limitado">
+            <a href="#analise">Análise</a>
+            <a href="#esqueleto">Esqueleto</a>
+            <a href="#conexoes">Conexões</a>
+        </div>
+    </nav>
+
+    <main class="conteudo-limitado">
+        <section id="analise">
+            <h1>Análise dos princípios de design</h1>
+            <p class="introducao">
+                O site escolhido para esta atividade é um portal de notícias
+                fictício. Abaixo estão os quatro princípios observados em sua
+                organização visual.
+            </p>
+
+            <div class="grade-principios">
+                <article class="principio">
+                    <h2>Contraste</h2>
+                    <p>
+                        O azul-escuro do cabeçalho contrasta com o texto branco.
+                        A cor laranja destaca links e informações importantes.
+                    </p>
+                </article>
+
+                <article class="principio">
+                    <h2>Alinhamento</h2>
+                    <p>
+                        Títulos, textos e blocos seguem a mesma largura central,
+                        criando uma linha visual fácil de acompanhar.
+                    </p>
+                </article>
+
+                <article class="principio">
+                    <h2>Repetição</h2>
+                    <p>
+                        Os cartões repetem cores, bordas, títulos e espaçamentos,
+                        fazendo com que todos pareçam parte do mesmo site.
+                    </p>
+                </article>
+
+                <article class="principio">
+                    <h2>Proximidade</h2>
+                    <p>
+                        O título e a descrição de cada princípio ficam próximos,
+                        enquanto assuntos diferentes têm mais espaço entre si.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="esqueleto" class="secao-esqueleto">
+            <h2>Esqueleto HTML do portal</h2>
+            <p>
+                As caixas abaixo representam a anatomia da página. Cada bloco
+                visual corresponde a uma parte da estrutura HTML.
+            </p>
+
+            <figure class="esqueleto">
+                <div class="bloco bloco-cabecalho">&lt;header&gt; Cabeçalho</div>
+                <div class="bloco bloco-menu">&lt;nav&gt; Menu</div>
+                <div class="colunas">
+                    <div class="bloco bloco-principal">
+                        &lt;main&gt;
+                        <div class="bloco bloco-artigo">&lt;article&gt; Notícia principal</div>
+                        <div class="bloco bloco-artigo">&lt;article&gt; Outra notícia</div>
+                    </div>
+                    <div class="bloco bloco-lateral">&lt;aside&gt; Conteúdo lateral</div>
+                </div>
+                <div class="bloco bloco-rodape">&lt;footer&gt; Rodapé</div>
+                <figcaption>
+                    Representação dos principais elementos semânticos da página.
+                </figcaption>
+            </figure>
+        </section>
+
+        <aside id="conexoes" class="conexoes">
+            <h2>Conexões com outros módulos</h2>
+            <ul>
+                <li>
+                    <strong>Lógica:</strong> dividir a página em blocos é um
+                    exemplo de decomposição de um problema grande em partes menores.
+                </li>
+                <li>
+                    <strong>JS-1:</strong> cada bloco HTML se torna um elemento
+                    do DOM que pode ser selecionado e alterado.
+                </li>
+                <li>
+                    <strong>JS-2:</strong> os cartões repetidos poderiam ser
+                    criados a partir de uma lista de objetos usando JavaScript.
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="rodape-site">
+        <p>Miniprojeto da Aula 02 — Princípios de design e estrutura HTML.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
