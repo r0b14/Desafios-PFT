@@ -1,0 +1,170 @@
+/* Importa a fonte Merriweather do site Google Fonts. */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap");
+
+/*
+    AULA 06 - TEXTO E FONTES
+
+    Propriedades praticadas:
+    font-family, font-size, font-weight, text-transform e text-align.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #343434;
+    background-color: #fff8ec;
+}
+
+header {
+    padding: 36px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #713b2b;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 34px auto;
+    padding: 0 22px;
+}
+
+.receita {
+    margin-bottom: 38px;
+    padding: 26px;
+    background-color: #ffffff;
+    border: 2px solid #e3c6aa;
+    border-radius: 12px;
+}
+
+/*
+    Estilos pedidos para os títulos das receitas:
+    - fonte importada;
+    - letras maiúsculas;
+    - tamanho maior;
+    - texto em negrito.
+*/
+.receita h2 {
+    margin: 0 0 22px;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cada título de receita recebe uma cor diferente. */
+.receita-bolo h2 {
+    color: #cc681d;
+}
+
+.receita-sanduiche h2 {
+    color: #39703d;
+}
+
+.receita-macarrao h2 {
+    color: #ad3434;
+}
+
+.receita img {
+    display: block;
+    width: 100%;
+    height: 290px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ingredientes,
+.preparo {
+    margin-bottom: 18px;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.ingredientes {
+    background-color: #fff1ca;
+    border-left: 6px solid #d8a642;
+}
+
+.preparo {
+    margin-bottom: 0;
+    background-color: #e7f3e2;
+    border-left: 6px solid #6c9a64;
+}
+
+.ingredientes h3,
+.preparo h3 {
+    margin: 0 0 12px;
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ingredientes ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.ingredientes li {
+    margin-bottom: 6px;
+}
+
+/*
+    O text-align: justify alinha o texto às margens esquerda e direita.
+    O text-indent cria um pequeno recuo no início do parágrafo.
+*/
+.preparo p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4d291f;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .receita {
+        padding: 18px;
+    }
+
+    .receita h2 {
+        font-size: 24px;
+    }
+
+    .receita img {
+        height: 220px;
+    }
+}

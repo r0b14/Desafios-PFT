@@ -1,0 +1,90 @@
+/*
+    AULA 02 - CORES, FUNDOS E BORDAS
+    Os comentários abaixo mostram o objetivo de cada grupo de estilos.
+*/
+
+/* Estilos gerais da página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3028;
+
+    /* Um gradiente também é uma imagem de fundo criada pelo CSS. */
+    background-color: #fff8e8;
+    background-image: linear-gradient(to bottom, #fff3cd, #ffe0b2);
+}
+
+/* Cabeçalho da página */
+header {
+    padding: 32px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #8b4513;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Área que reúne as três receitas */
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Cada receita fica dentro de uma seção branca */
+.receita {
+    margin-bottom: 28px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 2px solid #d7b899;
+    border-radius: 12px;
+}
+
+/* Cor dos títulos com os nomes das receitas */
+.receita-bolo h2 {
+    color: #7b2d26;
+}
+
+.receita-panqueca h2 {
+    color: #c06b00;
+}
+
+.receita-salada h2 {
+    color: #357a38;
+}
+
+/* Fundo e borda dos parágrafos de ingredientes */
+.ingredientes {
+    padding: 16px;
+    line-height: 1.7;
+    background-color: #fff3cd;
+    border: 2px solid #e0a800;
+    border-radius: 8px;
+}
+
+/* Fundo e borda dos parágrafos com o modo de fazer */
+.modo-preparo {
+    padding: 16px;
+    line-height: 1.7;
+    background-color: #e8f5e9;
+    border: 2px dashed #4f8a52;
+    border-radius: 8px;
+}
+
+/* Rodapé da página */
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #5d4037;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-labelledby="titulo descricao">
+    <title id="titulo">Salada de frutas</title>
+    <desc id="descricao">Ilustração de uma tigela com banana, morango, kiwi e uvas.</desc>
+    <defs>
+        <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e9f6d5"/>
+            <stop offset="1" stop-color="#badbaf"/>
+        </linearGradient>
+        <linearGradient id="tigela" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f9ffff"/>
+            <stop offset="1" stop-color="#a9d6dd"/>
+        </linearGradient>
+    </defs>
+    <rect width="900" height="500" fill="url(#fundo)"/>
+    <ellipse cx="450" cy="413" rx="285" ry="38" fill="#547552" opacity=".2"/>
+    <g>
+        <circle cx="315" cy="224" r="43" fill="#7956a8"/>
+        <circle cx="365" cy="195" r="38" fill="#68489b"/>
+        <circle cx="412" cy="225" r="42" fill="#815bb0"/>
+        <path d="M507 160c54-37 119 17 94 80-19 49-88 31-102-7-10-26-4-53 8-73z" fill="#e94c4a"/>
+        <path d="M515 165c20 6 45 1 62-12-4 20-24 35-48 34z" fill="#4c963e"/>
+        <circle cx="517" cy="244" r="58" fill="#78b843"/>
+        <circle cx="517" cy="244" r="43" fill="#b8dc62"/>
+        <circle cx="517" cy="244" r="13" fill="#f4e38a"/>
+        <g fill="#354d27">
+            <circle cx="517" cy="210" r="3"/><circle cx="543" cy="224" r="3"/><circle cx="549" cy="251" r="3"/>
+            <circle cx="534" cy="272" r="3"/><circle cx="507" cy="278" r="3"/><circle cx="486" cy="260" r="3"/>
+            <circle cx="485" cy="232" r="3"/><circle cx="497" cy="215" r="3"/>
+        </g>
+        <path d="M247 278c39-83 116-110 178-74-77 4-124 42-151 94z" fill="#f5d34f"/>
+        <path d="M263 280c35-54 88-81 140-75" fill="none" stroke="#fff2a0" stroke-width="13" stroke-linecap="round"/>
+    </g>
+    <path d="M195 278h510c-15 122-107 176-255 176S210 400 195 278z" fill="url(#tigela)" stroke="#78afb7" stroke-width="10"/>
+    <path d="M216 300h468" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity=".75"/>
+</svg>

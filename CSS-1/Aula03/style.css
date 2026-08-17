@@ -1,0 +1,116 @@
+/*
+    AULA 03 - MARGIN E PADDING
+
+    margin: cria espaço do lado de fora de um elemento.
+    padding: cria espaço do lado de dentro de um elemento.
+*/
+
+/* Retira a margem padrão do navegador e define a aparência da página. */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d3d3d;
+    background-color: #fff7e8;
+}
+
+/* O padding afasta o conteúdo das bordas do cabeçalho. */
+header {
+    padding: 32px 20px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d2691e;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Centraliza o conteúdo e mantém uma margem nas laterais da tela. */
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*
+    margin-bottom separa uma receita da outra.
+    padding cria espaço entre o conteúdo e a borda do cartão.
+*/
+.receita {
+    margin-bottom: 40px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 2px solid #e8c39e;
+    border-radius: 12px;
+}
+
+/* Título principal de cada receita. */
+.receita h2 {
+    margin: 0 0 24px;
+    padding: 14px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #a84032;
+    border-radius: 8px;
+}
+
+/* A margem inferior separa a imagem do conteúdo seguinte. */
+.receita img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 24px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Títulos de Ingredientes e Modo de Preparo. */
+.receita h3 {
+    margin: 24px 0 12px;
+    padding: 10px 14px;
+    color: #315a2d;
+    background-color: #dff0d8;
+    border-left: 6px solid #5b8c51;
+}
+
+/* O padding-left reserva espaço para os marcadores e números das listas. */
+.receita ul,
+.receita ol {
+    margin: 0;
+    padding-left: 28px;
+    line-height: 1.6;
+}
+
+/* Pequena margem entre cada item para facilitar a leitura. */
+.receita li {
+    margin-bottom: 8px;
+}
+
+/* Espaçamento interno e externo do rodapé. */
+footer {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #6d3d27;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajuste da altura das imagens em telas pequenas. */
+@media (max-width: 600px) {
+    .receita {
+        padding: 16px;
+    }
+
+    .receita img {
+        height: 220px;
+    }
+}
