@@ -3,399 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PFT – Mini Projetos em Python e JavaScript</title>
+    <meta name="description" content="Portal didático dos miniprojetos do programa Florescendo Talentos: Lógica, HTML, CSS e JavaScript.">
+    <meta name="theme-color" content="#0f766e">
+    <title>Desafios PFT — Aprenda construindo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>🌱 PFT – Mini Projetos em Python e JavaScript</h1>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho">
+        <div class="container barra-navegacao">
+            <a class="marca" href="#inicio" aria-label="Desafios PFT — página inicial">
+                <span class="marca-icone" aria-hidden="true">🌱</span>
+                <span>
+                    <strong>Desafios PFT</strong>
+                    <small>Florescendo Talentos</small>
+                </span>
+            </a>
+
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+                <span class="sr-only">Abrir menu</span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+
+            <nav id="menu-principal" class="menu-principal" aria-label="Navegação principal">
+                <a href="#comecar">Comece aqui</a>
+                <a href="#trilhas">Trilhas</a>
+                <a href="#aulas">Aulas</a>
+                <a href="#metodo">Como estudar</a>
+                <a class="link-github" href="https://github.com/r0b14/Desafios-PFT" target="_blank" rel="noopener noreferrer">
+                    GitHub <span aria-hidden="true">↗</span>
+                </a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="introduction">
-            <p>Bem-vindo(a) ao repositório <strong>Florescendo Talentos – Mini Projetos</strong>! Aqui você encontrará
-                pequenos programas em Python desenvolvidos durante as trilhas de aprendizagem do projeto <em>Florescendo
-                    Talentos</em>. Cada “Desafio” reforça um conceito essencial de lógica de programação de forma
-                simples, prática e divertida.</p>
-            <blockquote>
-                <p><strong>Objetivo do repositório</strong><br>Reunir, organizar e documentar todos os miniprojetos
-                    criados pelos(as) participantes do <strong>Florescendo Talentos</strong>, servindo de material de
-                    estudo, referência e inspiração para quem está dando os primeiros passos em programação.</p>
-            </blockquote>
-        </section>
-        <ul>
-            <li><strong>📁 Lógica/</strong> - Desafios em Python que abordam conceitos fundamentais de programação</li>
-            <li><strong>📁 JS-1/</strong> - Projetos iniciais em JavaScript com conceitos básicos</li>
-            <li><strong>📁 JS-2/</strong> - Projetos avançados em JavaScript com conceitos mais elaborados</li>
-            <li><strong>📁 docs/</strong> - Documentação e página web do projeto</li>
-        </ul>
-        </section>
 
-        <section id="desafios">
-            <h2>🌸 Visão geral dos desafios</h2>
+    <main id="conteudo">
+        <section id="inicio" class="hero">
+            <div class="container hero-grade">
+                <div class="hero-conteudo">
+                    <p class="chapeu"><span aria-hidden="true">✦</span> Aprendizado prático e progressivo</p>
+                    <h1>Aprenda construindo.<br><span>Entenda conectando.</span></h1>
+                    <p class="hero-texto">
+                        Miniprojetos para transformar conceitos de programação em experiências reais —
+                        um passo de cada vez, com exemplos comentados e conexões entre as disciplinas.
+                    </p>
+                    <div class="hero-acoes">
+                        <a class="botao botao-primario" href="#comecar">Quero começar</a>
+                        <a class="botao botao-secundario" href="#aulas">Explorar projetos</a>
+                    </div>
+                    <ul class="hero-beneficios" aria-label="Características do conteúdo">
+                        <li><span aria-hidden="true">✓</span> Código comentado</li>
+                        <li><span aria-hidden="true">✓</span> Projetos curtos</li>
+                        <li><span aria-hidden="true">✓</span> Evolução gradual</li>
+                    </ul>
+                </div>
 
-            <h3>🐍 Desafios Python (Lógica)</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Arquivo</th>
-                        <th>Tema</th>
-                        <th>Conceitos trabalhados</th>
-                        <th>Descrição resumida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio5.py" target="_blank"
-                                rel="noopener noreferrer"><code>Desafio5.py</code></a></td>
-                        <td>Calculadora</td>
-                        <td>Entrada/saída, operadores aritméticos</td>
-                        <td>Solicita dois números e exibe soma, subtração, divisão e multiplicação.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio6.py" target="_blank"
-                                rel="noopener noreferrer"><code>Desafio6.py</code></a></td>
-                        <td>Chovendo ou não?</td>
-                        <td>Operadores lógicos, condicionais</td>
-                        <td>Decide se a pessoa deve ir à biblioteca ou ficar em casa dependendo de três respostas.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio7.py" target="_blank"
-                                rel="noopener noreferrer"><code>Desafio7.py</code></a></td>
-                        <td>Votação</td>
-                        <td>Condicionais aninhados</td>
-                        <td>Informa se o voto é <strong>obrigatório</strong> ou <strong>facultativo</strong> conforme a
-                            idade inserida.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio8.py" target="_blank"
-                                rel="noopener noreferrer"><code>Desafio8.py</code></a></td>
-                        <td>Par ou Ímpar</td>
-                        <td>Operador módulo, <code>if/else</code></td>
-                        <td>Identifica se o número digitado é par ou ímpar.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio9.py" target="_blank"
-                                rel="noopener noreferrer"><code>Desafio9.py</code></a></td>
-                        <td>Lanchonete</td>
-                        <td>Estruturas de decisão encadeadas, variáveis acumuladoras</td>
-                        <td>Monta um pedido de sanduíche + complemento + refrigerante e calcula o valor total.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio10.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio10.py</code></a></td>
-                        <td>Festival de Tapiocas Mágicas</td>
-                        <td><code>while</code>, contadores, validação de entrada</td>
-                        <td>Permite escolher até 5 ingredientes para uma tapioca, listando o resultado final.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio11.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio11.py</code></a></td>
-                        <td>Feira – Produto Vencedor</td>
-                        <td><code>for</code>, tratamento de erros (<code>try/except</code>), comparação de valores</td>
-                        <td>Avalia produtos de barracas e exibe o campeão com a maior nota.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio12.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio12.py</code></a></td>
-                        <td>Feira de Artesanato Místico</td>
-                        <td><code>for</code>, <code>break</code>, estruturas de decisão</td>
-                        <td>Jogo de investigação onde o usuário procura por um artefato desaparecido explorando
-                            barracas.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio13.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio13.py</code></a></td>
-                        <td>Passos Perdidos de Frevo</td>
-                        <td>Strings, <code>in</code>, <code>len()</code>, <code>replace()</code>, slicing</td>
-                        <td>Decifra mensagens misteriosas procurando palavras-chave relacionadas ao frevo pernambucano.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio14.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio14.py</code></a></td>
-                        <td>Quadrilha Sertão Encantado Tech</td>
-                        <td>Listas, dicionários, <code>while</code>, manipulação de strings</td>
-                        <td>Sistema para cadastrar dançarinos de quadrilha com suas habilidades e preferências.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio15.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio15.py</code></a></td>
-                        <td>Código Mágico de São João</td>
-                        <td>Dicionários, listas, <code>while</code>, validação de entrada</td>
-                        <td>Decodifica códigos mágicos para criar receitas típicas de São João.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio16.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio16.py</code></a></td>
-                        <td>Receita Ancestral de Cuscuz</td>
-                        <td>Tuplas, dicionários, <code>while</code>, tratamento de erros</td>
-                        <td>Sistema interativo para escolher ingredientes e exibir instruções de receita de cuscuz.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio17.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio17.py</code></a></td>
-                        <td>Cartela de Bingo</td>
-                        <td>Funções, <code>random</code>, listas aninhadas, loops</td>
-                        <td>Gera cartelas de bingo com números únicos dispostos em uma matriz 5x5.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio18.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio18.py</code></a></td>
-                        <td>Floresta Mágica de Bytenópolis</td>
-                        <td>Funções, menu interativo, estruturas condicionais</td>
-                        <td>Jogo de aventura onde o usuário explora diferentes caminhos em uma floresta mágica.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio19.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio19.py</code></a></td>
-                        <td>Competição de Heróis</td>
-                        <td>Funções, <code>random</code>, dicionários, estatísticas</td>
-                        <td>Simula uma competição entre heróis da Marvel e DC para distribuição de vacinas.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/Lógica/Desafio20.py"
-                                target="_blank" rel="noopener noreferrer"><code>Desafio20.py</code></a></td>
-                        <td>Sistema de Registro de Vacinação</td>
-                        <td>Arquivos, <code>with open</code>, menu interativo, manipulação de dados</td>
-                        <td>Sistema completo para registrar e consultar dados de vacinação em arquivo de texto.</td>
-                    </tr>
-                </tbody>
-            </table>
+                <aside class="painel-progresso" aria-label="Resumo do conteúdo">
+                    <div class="painel-topo">
+                        <div>
+                            <span class="sinal-online" aria-hidden="true"></span>
+                            <strong>Seu mapa de estudos</strong>
+                        </div>
+                        <span class="etiqueta">em evolução</span>
+                    </div>
 
-            <h3>⚡ Projetos JavaScript</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Arquivo</th>
-                        <th>Tema</th>
-                        <th>Conceitos trabalhados</th>
-                        <th>Descrição resumida</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project3.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project3.js</code></a></td>
-                        <td>Tabela de Competição</td>
-                        <td>Operadores lógicos, condicionais, variáveis booleanas</td>
-                        <td>Verifica se alunos podem competir baseado em critérios de treino e inscrição.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project4.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project4.js</code></a></td>
-                        <td>Mulheres na Tecnologia</td>
-                        <td>Condicionais <code>if/else</code>, estruturas de decisão</td>
-                        <td>Apresenta informações sobre mulheres importantes na história da tecnologia.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project5.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project5.js</code></a></td>
-                        <td>Verificação de Idade</td>
-                        <td>Condicionais, operadores de comparação, cálculos</td>
-                        <td>Verifica permissão para dirigir e calcula descontos para idosos.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project6.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project6.js</code></a></td>
-                        <td>Lanchonete Comunitária</td>
-                        <td>Estruturas condicionais encadeadas, variáveis acumuladoras</td>
-                        <td>Sistema de pedidos que calcula total e monta resumo de itens selecionados.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project7.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project7.js</code></a></td>
-                        <td>Jogo de Adivinhação</td>
-                        <td>Strings, condicionais, estruturas de repetição</td>
-                        <td>Jogo onde o usuário tenta adivinhar letras de uma palavra secreta.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project8.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project8.js</code></a></td>
-                        <td>Festival Cultural</td>
-                        <td>Variáveis, concatenação, busca em dados</td>
-                        <td>Sistema de informações sobre apresentações culturais com busca por tipo.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project9.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project9.js</code></a></td>
-                        <td>Sistema de Velocidade</td>
-                        <td>Arrow functions, cálculos matemáticos, funções</td>
-                        <td>Calcula velocidade média com base em distância e tempo.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project10.js" target="_blank"
-                                rel="noopener noreferrer"><code>Project10.js</code></a></td>
-                        <td>Busca de Países</td>
-                        <td>Arrays, funções, <code>prompt</code>, loops</td>
-                        <td>Sistema interativo para buscar países por nome ou posição em ranking.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula12.js" target="_blank"
-                                rel="noopener noreferrer"><code>Aula12.js</code></a></td>
-                        <td>Sistema de Votação de Jogos</td>
-                        <td>Expressões de função, loops, validação, estatísticas</td>
-                        <td>Sistema completo de votação para jogos multiplayer com relatórios detalhados.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula13.js" target="_blank"
-                                rel="noopener noreferrer"><code>Aula13.js</code></a></td>
-                        <td>Tabela de Times</td>
-                        <td>Arrow functions, arrays de objetos, menu interativo</td>
-                        <td>Sistema para consultar informações de times de futebol por nome ou posição.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula14.js" target="_blank"
-                                rel="noopener noreferrer"><code>Aula14.js</code></a></td>
-                        <td>Agendamento de Vacinas</td>
-                        <td>Callbacks, <code>setTimeout</code>, <code>setInterval</code>, arrays de objetos</td>
-                        <td>Sistema interativo de agendamento com lembretes automáticos e informações sobre vacinação.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula15.js" target="_blank"
-                                rel="noopener noreferrer"><code>Aula15.js</code></a></td>
-                        <td>Tabela de Times com Menu</td>
-                        <td>Arrow functions, menu interativo, busca em arrays</td>
-                        <td>Versão avançada do sistema de consulta de times com interface mais elaborada.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula17.js" target="_blank"
-                                rel="noopener noreferrer"><code>Aula17.js</code></a></td>
-                        <td>Cálculo de Velocidade</td>
-                        <td>Arrow functions, cálculos matemáticos, formatação</td>
-                        <td>Função para calcular velocidade média com formatação de resultado.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula16/Aula15.js"
-                                target="_blank" rel="noopener noreferrer"><code>Aula16/Aula15.js</code></a></td>
-                        <td>Sistema de Farol Interativo</td>
-                        <td>DOM manipulation, event listeners, toggle classes</td>
-                        <td>Sistema interativo que liga/desliga um farol de carro com clique.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-2/Aula18/aula18.js"
-                                target="_blank" rel="noopener noreferrer"><code>Aula18/aula18.js</code></a></td>
-                        <td>Carousel de Notícias</td>
-                        <td>DOM manipulation, event listeners, arrays, módulo</td>
-                        <td>Sistema de navegação entre notícias com botões de próximo/anterior.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <blockquote>
-                <p>📚 <strong>Por que “mini” projetos?</strong><br>Cada arquivo concentra um problema bem definido para
-                    que você pratique conceitos específicos sem sobrecarga cognitiva. Isso facilita o aprendizado
-                    incremental.</p>
-            </blockquote>
+                    <div class="trilha-visual" aria-label="Lógica, HTML, CSS e JavaScript">
+                        <div class="passo passo-logica">
+                            <span>01</span>
+                            <div><strong>Lógica</strong><small>Pensar</small></div>
+                        </div>
+                        <div class="linha-passo" aria-hidden="true"></div>
+                        <div class="passo passo-html">
+                            <span>02</span>
+                            <div><strong>HTML</strong><small>Estruturar</small></div>
+                        </div>
+                        <div class="linha-passo" aria-hidden="true"></div>
+                        <div class="passo passo-css">
+                            <span>03</span>
+                            <div><strong>CSS</strong><small>Apresentar</small></div>
+                        </div>
+                        <div class="linha-passo" aria-hidden="true"></div>
+                        <div class="passo passo-js">
+                            <span>04</span>
+                            <div><strong>JavaScript</strong><small>Interagir</small></div>
+                        </div>
+                    </div>
+
+                    <div class="painel-numeros">
+                        <div><strong>7</strong><span>trilhas</span></div>
+                        <div><strong>8</strong><span>projetos web didáticos</span></div>
+                        <div><strong>17</strong><span>desafios de lógica</span></div>
+                    </div>
+                </aside>
+            </div>
         </section>
 
-        <section id="executar">
-            <h2>🛠️ Como executar</h2>
-            <h3>1. Pré-requisitos</h3>
-            <ul>
-                <li>Python 3.10 ou superior instalado.</li>
-                <li>Node.js instalado (para projetos JavaScript).</li>
-                <li>Editor ou IDE de sua preferência (VS Code, PyCharm, Thonny…).</li>
-            </ul>
-            <h3>2. Clonar o repositório</h3>
-            <pre><code>git clone https://github.com/r0b14/Desafios-PFT.git
-cd Desafios-PFT</code></pre>
-            <h3>3. Executar um desafio</h3>
-            <p><strong>Para projetos Python:</strong></p>
-            <pre><code>python Lógica/Desafio5.py  # substitua pelo arquivo desejado</code></pre>
-            <p><strong>Para projetos JavaScript:</strong></p>
-            <pre><code>node JS-1/Project3.js  # substitua pelo arquivo desejado</code></pre>
-            <p>Os projetos JavaScript também podem ser executados diretamente no navegador usando o console do
-                desenvolvedor.</p>
+        <section id="comecar" class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="chapeu">Primeiros passos</p>
+                    <h2>Não sabe por onde começar?</h2>
+                    <p>Siga esta sequência simples. Você não precisa aprender tudo de uma vez.</p>
+                </div>
+
+                <div class="passos-iniciais">
+                    <article class="card-passo">
+                        <span class="numero-grande" aria-hidden="true">1</span>
+                        <div class="icone-card icone-pensar" aria-hidden="true">🧠</div>
+                        <h3>Entenda o problema</h3>
+                        <p>Identifique quais são os dados de entrada, o processamento e o resultado esperado.</p>
+                        <a href="#conexoes">Ver conexão com Lógica <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card-passo">
+                        <span class="numero-grande" aria-hidden="true">2</span>
+                        <div class="icone-card icone-construir" aria-hidden="true">🧱</div>
+                        <h3>Construa uma parte</h3>
+                        <p>Comece pela menor versão que funciona. Depois organize e acrescente detalhes.</p>
+                        <a href="#aulas">Abrir um miniprojeto <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card-passo">
+                        <span class="numero-grande" aria-hidden="true">3</span>
+                        <div class="icone-card icone-testar" aria-hidden="true">🔎</div>
+                        <h3>Teste e explique</h3>
+                        <p>Execute o projeto, altere valores e tente explicar cada parte com suas palavras.</p>
+                        <a href="#metodo">Conhecer o método <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="estrutura">
-            <h2>🧭 Estrutura de pastas</h2>
-            <pre><code>📁 Desafios-PFT/
-├── 📁 docs/
-│   ├── index.html
-│   └── style.css
-├── 📁 Lógica/
-│   ├── Desafio5.py
-│   ├── Desafio6.py
-│   ├── Desafio7.py
-│   ├── Desafio8.py
-│   ├── Desafio9.py
-│   ├── Desafio10.py
-│   ├── Desafio11.py
-│   ├── Desafio12.py
-│   ├── Desafio13.py
-│   ├── Desafio14.py
-│   ├── Desafio15.py
-│   ├── Desafio16.py
-│   ├── Desafio17.py
-│   ├── desafio17.png
-│   ├── Desafio18.py
-│   ├── Desafio19.py
-│   └── Desafio20.py
-├── 📁 JS-1/
-│   ├── Project3.js
-│   ├── Project4.js
-│   ├── Project5.js
-│   ├── Project6.js
-│   ├── Project7.js
-│   ├── Project8.js
-│   ├── Project9.js
-│   └── Project10.js
-├── 📁 JS-2/
-│   ├── Aula12.js
-│   ├── Aula13.js
-│   ├── Aula14.js
-│   ├── Aula15.js
-│   ├── Aula17.js
-│   ├── index.html
-│   ├── 📁 Aula16/
-│   │   ├── Aula15.js
-│   │   ├── index.html
-│   │   └── style.css
-│   └── 📁 Aula18/
-│       ├── aula18.js
-│       ├── index.html
-│       └── style.css
-└── README.md</code></pre>
+        <section id="trilhas" class="secao">
+            <div class="container">
+                <div class="titulo-secao titulo-secao-linha">
+                    <div>
+                        <p class="chapeu">Trilhas de aprendizagem</p>
+                        <h2>Escolha o próximo passo</h2>
+                    </div>
+                    <p>As trilhas se complementam. Use os indicadores para acompanhar o conteúdo disponível.</p>
+                </div>
+
+                <div class="grade-trilhas">
+                    <article class="card-trilha trilha-logica">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">🧠</span>
+                            <span class="status status-pronto">conteúdo disponível</span>
+                        </div>
+                        <h3>Lógica</h3>
+                        <p>Algoritmos, decisões, repetições, coleções e funções usando Python.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Progresso da trilha Lógica" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                            <span style="width: 100%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>17 desafios</small>
+                            <a href="https://github.com/r0b14/Desafios-PFT/tree/main/L%C3%B3gica" target="_blank" rel="noopener noreferrer">Ver trilha ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card-trilha trilha-html">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">🏗️</span>
+                            <span class="status status-andamento">em construção</span>
+                        </div>
+                        <h3>HTML 1</h3>
+                        <p>Estrutura, semântica, princípios de design, listas e tabelas.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Progresso da trilha HTML 1" aria-valuemin="0" aria-valuemax="20" aria-valuenow="3">
+                            <span style="width: 15%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>3 de 20 aulas</small>
+                            <a href="#aulas" data-atalho-filtro="html">Ver aulas ↓</a>
+                        </div>
+                    </article>
+
+                    <article class="card-trilha trilha-html2">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">🧭</span>
+                            <span class="status status-preparado">estrutura preparada</span>
+                        </div>
+                        <h3>HTML 2</h3>
+                        <p>Continuação da estruturação de páginas e recursos semânticos.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Progresso da trilha HTML 2" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0">
+                            <span style="width: 0%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>próxima etapa</small>
+                            <span>Em breve</span>
+                        </div>
+                    </article>
+
+                    <article class="card-trilha trilha-css">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">🎨</span>
+                            <span class="status status-andamento">em construção</span>
+                        </div>
+                        <h3>CSS 1</h3>
+                        <p>Cores, espaçamentos, Box Model, contornos, textos e fontes.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Progresso da trilha CSS 1" aria-valuemin="0" aria-valuemax="19" aria-valuenow="5">
+                            <span style="width: 26%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>5 aulas prontas</small>
+                            <a href="#aulas" data-atalho-filtro="css">Ver aulas ↓</a>
+                        </div>
+                    </article>
+
+                    <article class="card-trilha trilha-js">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">⚡</span>
+                            <span class="status status-pronto">conteúdo disponível</span>
+                        </div>
+                        <h3>JavaScript 1</h3>
+                        <p>Variáveis, condicionais, repetições, funções, strings e arrays.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Progresso da trilha JavaScript 1" aria-valuemin="0" aria-valuemax="8" aria-valuenow="8">
+                            <span style="width: 100%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>8 projetos</small>
+                            <a href="https://github.com/r0b14/Desafios-PFT/tree/main/JS-1" target="_blank" rel="noopener noreferrer">Ver trilha ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="card-trilha trilha-js2">
+                        <div class="card-trilha-topo">
+                            <span class="trilha-icone" aria-hidden="true">🖱️</span>
+                            <span class="status status-pronto">conteúdo disponível</span>
+                        </div>
+                        <h3>JavaScript 2 e 3</h3>
+                        <p>DOM, eventos, callbacks, módulos e aplicações interativas.</p>
+                        <div class="barra-progresso" role="progressbar" aria-label="Conteúdo disponível em JavaScript 2 e 3" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                            <span style="width: 70%"></span>
+                        </div>
+                        <div class="card-trilha-rodape">
+                            <small>conteúdo avançado</small>
+                            <a href="https://github.com/r0b14/Desafios-PFT/tree/main/JS-2" target="_blank" rel="noopener noreferrer">Ver trilha ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contribuir">
-            <h2>🤝 Contribuindo</h2>
-            <p>Este é um projeto de código aberto e todas as contribuições são bem-vindas! Se você encontrar um bug,
-                tiver uma sugestão de melhoria ou quiser adicionar um novo desafio, siga os passos abaixo.</p>
-            <blockquote class="emphasis">
-                <p><strong>Encontrou um erro ou tem uma ideia?</strong><br>
-                    Não hesite em fazer um <strong>fork</strong> deste repositório e enviar um <strong>Pull
-                        Request</strong> com suas correções ou novas funcionalidades. A comunidade agradece!</p>
-            </blockquote>
-            <ol>
-                <li>Fork este repositório.</li>
-                <li>Crie um <em>branch</em> de feature: <code>git checkout -b minha-feature</code>.</li>
-                <li>Faça <em>commit</em> das alterações: <code>git commit -m "feat: nova funcionalidade"</code>.</li>
-                <li><em>Push</em> para o seu fork: <code>git push origin minha-feature</code>.</li>
-                <li>Abra um <strong>Pull Request</strong> explicando suas mudanças.</li>
-            </ol>
-            <p><em>Feel free</em> para contribuir – a comunidade aprende mais quando colabora! 🌟</p>
+        <section id="aulas" class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="chapeu">Catálogo de miniprojetos</p>
+                    <h2>Aprenda com um projeto de cada vez</h2>
+                    <p>Use os filtros para encontrar uma aula. Cada card mostra o objetivo antes de você abrir o código.</p>
+                </div>
+
+                <div class="filtros" role="group" aria-label="Filtrar projetos por trilha">
+                    <button type="button" class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button>
+                    <button type="button" class="filtro" data-filtro="html" aria-pressed="false">HTML</button>
+                    <button type="button" class="filtro" data-filtro="css" aria-pressed="false">CSS</button>
+                    <button type="button" class="filtro" data-filtro="logica" aria-pressed="false">Lógica</button>
+                    <button type="button" class="filtro" data-filtro="javascript" aria-pressed="false">JavaScript</button>
+                </div>
+
+                <p class="resultado-filtro" aria-live="polite"><strong>12</strong> projetos exibidos</p>
+
+                <div class="grade-projetos">
+                    <article class="card-projeto" data-categoria="html">
+                        <div class="projeto-meta"><span class="selo selo-html">HTML</span><span>Aula 01</span></div>
+                        <h3>Fundamentos do HTML</h3>
+                        <p>Construa uma página com a estrutura essencial, títulos e parágrafos.</p>
+                        <ul><li>Estrutura do documento</li><li>Aninhamento de tags</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/HTML1/Aula01" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="html">
+                        <div class="projeto-meta"><span class="selo selo-html">HTML</span><span>Aula 02</span></div>
+                        <h3>Anatomia de um site</h3>
+                        <p>Analise um portal e reconheça seus blocos e princípios de design.</p>
+                        <ul><li>Semântica</li><li>Organização visual</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/HTML1/Aula02" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="html">
+                        <div class="projeto-meta"><span class="selo selo-html">HTML</span><span>Aula 03</span></div>
+                        <h3>Receita organizada</h3>
+                        <p>Apresente ingredientes, preparo e informações nutricionais.</p>
+                        <ul><li>Listas</li><li>Tabelas</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/HTML1/Aula03" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="css">
+                        <div class="projeto-meta"><span class="selo selo-css">CSS</span><span>Aula 02</span></div>
+                        <h3>Receitas coloridas</h3>
+                        <p>Destaque receitas usando cores, fundos e diferentes bordas.</p>
+                        <ul><li>color</li><li>background e border</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/CSS-1/Aula02" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="css">
+                        <div class="projeto-meta"><span class="selo selo-css">CSS</span><span>Aula 03</span></div>
+                        <h3>Espaçamento em receitas</h3>
+                        <p>Organize o conteúdo controlando os espaços internos e externos.</p>
+                        <ul><li>margin</li><li>padding</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/CSS-1/Aula03" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="css">
+                        <div class="projeto-meta"><span class="selo selo-css">CSS</span><span>Aula 04</span></div>
+                        <h3>Biografia em caixas</h3>
+                        <p>Entenda como conteúdo, preenchimento, borda e margem formam uma caixa.</p>
+                        <ul><li>Box Model</li><li>box-sizing</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/CSS-1/Aula04" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="css">
+                        <div class="projeto-meta"><span class="selo selo-css">CSS</span><span>Aula 05</span></div>
+                        <h3>Imagens em destaque</h3>
+                        <p>Use contornos para destacar elementos sem alterar o layout.</p>
+                        <ul><li>outline</li><li>outline-offset</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/CSS-1/Aula05" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="css">
+                        <div class="projeto-meta"><span class="selo selo-css">CSS</span><span>Aula 06</span></div>
+                        <h3>Texto com personalidade</h3>
+                        <p>Trabalhe fontes, pesos, tamanhos e alinhamento de texto.</p>
+                        <ul><li>font</li><li>text</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/CSS-1/Aula06" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="logica">
+                        <div class="projeto-meta"><span class="selo selo-logica">Lógica</span><span>Desafio 05</span></div>
+                        <h3>Calculadora</h3>
+                        <p>Receba dois números e realize as quatro operações básicas.</p>
+                        <ul><li>Entrada e saída</li><li>Operadores</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/blob/main/L%C3%B3gica/Desafio5.py" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="logica">
+                        <div class="projeto-meta"><span class="selo selo-logica">Lógica</span><span>Desafio 17</span></div>
+                        <h3>Cartela de bingo</h3>
+                        <p>Gere números únicos e organize os dados em uma matriz.</p>
+                        <ul><li>Funções</li><li>Listas e random</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/blob/main/L%C3%B3gica/Desafio17.py" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="javascript">
+                        <div class="projeto-meta"><span class="selo selo-js">JavaScript</span><span>Projeto 07</span></div>
+                        <h3>Jogo de adivinhação</h3>
+                        <p>Descubra letras de uma palavra usando decisões e repetições.</p>
+                        <ul><li>Strings</li><li>Condicionais e loops</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/blob/main/JS-1/Project7.js" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="card-projeto" data-categoria="javascript">
+                        <div class="projeto-meta"><span class="selo selo-js">JavaScript</span><span>Aula 18</span></div>
+                        <h3>Carrossel de notícias</h3>
+                        <p>Navegue por conteúdos usando eventos e manipulação do DOM.</p>
+                        <ul><li>Eventos</li><li>DOM e arrays</li></ul>
+                        <a href="https://github.com/r0b14/Desafios-PFT/tree/main/JS-2/Aula18" target="_blank" rel="noopener noreferrer">Abrir código <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="licenca">
-            <h2>📜 Licença</h2>
-            <p>Este projeto está licenciado sob a licença <strong>MIT</strong>.</p>
+        <section id="metodo" class="secao">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="chapeu">Aprendizado conectado</p>
+                    <h2>O mesmo raciocínio aparece em várias disciplinas</h2>
+                    <p>Quando você reconhece essas relações, os conceitos deixam de parecer isolados.</p>
+                </div>
+
+                <div id="conexoes" class="mapa-conexoes">
+                    <article>
+                        <span class="mapa-numero">01</span>
+                        <h3>Lógica organiza o pensamento</h3>
+                        <p>Uma receita é um algoritmo: possui entradas, uma sequência de passos e um resultado.</p>
+                        <code>entrada → processo → saída</code>
+                    </article>
+                    <span class="seta-conexao" aria-hidden="true">→</span>
+                    <article>
+                        <span class="mapa-numero">02</span>
+                        <h3>HTML organiza a informação</h3>
+                        <p>As tags descrevem o papel de cada conteúdo e criam a estrutura da página.</p>
+                        <code>&lt;estrutura&gt;conteúdo&lt;/estrutura&gt;</code>
+                    </article>
+                    <span class="seta-conexao" aria-hidden="true">→</span>
+                    <article>
+                        <span class="mapa-numero">03</span>
+                        <h3>CSS comunica visualmente</h3>
+                        <p>Cores, espaços e tamanhos ajudam o usuário a entender o que é mais importante.</p>
+                        <code>seletor { propriedade: valor; }</code>
+                    </article>
+                    <span class="seta-conexao" aria-hidden="true">→</span>
+                    <article>
+                        <span class="mapa-numero">04</span>
+                        <h3>JavaScript adiciona comportamento</h3>
+                        <p>Eventos transformam ações do usuário em mudanças visíveis na interface.</p>
+                        <code>evento → função → resposta</code>
+                    </article>
+                </div>
+
+                <div class="metodo-estudo">
+                    <div class="metodo-conteudo">
+                        <p class="chapeu">Um método para cada desafio</p>
+                        <h2>Leia, planeje, construa e explique</h2>
+                        <ol>
+                            <li><strong>Leia o enunciado.</strong> Marque o que precisa existir no resultado.</li>
+                            <li><strong>Planeje a menor solução.</strong> Divida o problema em partes pequenas.</li>
+                            <li><strong>Construa e teste.</strong> Faça uma parte funcionar antes de avançar.</li>
+                            <li><strong>Explique com suas palavras.</strong> Se você consegue explicar, está aprendendo.</li>
+                        </ol>
+                    </div>
+
+                    <aside class="card-desafio">
+                        <span aria-hidden="true">💡</span>
+                        <p class="card-desafio-etiqueta">Desafio de revisão</p>
+                        <h3>Faça três perguntas ao seu código</h3>
+                        <ul>
+                            <li>O que entra?</li>
+                            <li>O que acontece?</li>
+                            <li>O que aparece no final?</li>
+                        </ul>
+                        <p>Essas perguntas funcionam em Python, HTML, CSS e JavaScript.</p>
+                    </aside>
+                </div>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>📞 Contato & referências</h2>
-            <ul>
-                <li><strong>Projeto Florescendo Talentos</strong> – iniciativa de formação e inclusão tecnológica.</li>
-                <li>Dúvidas ou sugestões? Abra uma <em>issue</em> ou envie e-mail para <a
-                        href="mailto:contato@florescendo-talentos.org">contato@florescendo-talentos.org</a>.</li>
-            </ul>
+        <section class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="chapeu">Ajuda rápida</p>
+                    <h2>Como abrir e executar os projetos</h2>
+                </div>
+
+                <div class="perguntas">
+                    <details>
+                        <summary>Projetos HTML e CSS</summary>
+                        <div>
+                            <p>Abra o arquivo <code>index.html</code> da aula no navegador. No VS Code, você também pode usar a extensão Live Server.</p>
+                            <code class="codigo-bloco">HTML1/Aula03/index.html</code>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Exercícios JavaScript</summary>
+                        <div>
+                            <p>Projetos que usam somente o terminal podem ser executados com Node.js.</p>
+                            <code class="codigo-bloco">node JS-1/Project3.js</code>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Desafios de Lógica em Python</summary>
+                        <div>
+                            <p>Com o Python instalado, execute o arquivo desejado pelo terminal.</p>
+                            <code class="codigo-bloco">python "Lógica/Desafio5.py"</code>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Onde encontro o enunciado?</summary>
+                        <div>
+                            <p>Os arquivos de enunciados ficam na raiz do repositório. O código de cada projeto também possui comentários explicativos.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="chamada-final">
+            <div class="container chamada-final-conteudo">
+                <div>
+                    <p class="chapeu">Pronto para praticar?</p>
+                    <h2>Escolha um projeto pequeno e comece hoje.</h2>
+                    <p>Você não precisa saber tudo para começar. É praticando que as conexões aparecem.</p>
+                </div>
+                <a class="botao botao-claro" href="#aulas">Escolher projeto</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>“O conhecimento floresce quando compartilhado.” 🌼</p>
-    </footer>
-</body>
 
+    <footer class="rodape">
+        <div class="container rodape-grade">
+            <div>
+                <a class="marca marca-rodape" href="#inicio">
+                    <span class="marca-icone" aria-hidden="true">🌱</span>
+                    <span><strong>Desafios PFT</strong><small>Florescendo Talentos</small></span>
+                </a>
+                <p>Formação, prática e inclusão tecnológica por meio de projetos.</p>
+            </div>
+            <div>
+                <h2>Explorar</h2>
+                <a href="#trilhas">Trilhas</a>
+                <a href="#aulas">Miniprojetos</a>
+                <a href="#metodo">Método de estudo</a>
+            </div>
+            <div>
+                <h2>Projeto</h2>
+                <a href="https://github.com/r0b14/Desafios-PFT" target="_blank" rel="noopener noreferrer">Repositório no GitHub ↗</a>
+                <a href="https://github.com/r0b14/Desafios-PFT/issues" target="_blank" rel="noopener noreferrer">Dúvidas e sugestões ↗</a>
+            </div>
+        </div>
+        <div class="container rodape-base">
+            <p>© <span id="ano-atual">2026</span> Projeto Florescendo Talentos.</p>
+            <p>O conhecimento floresce quando é compartilhado. 🌼</p>
+        </div>
+    </footer>
+
+    <button class="voltar-topo" type="button" aria-label="Voltar ao início" title="Voltar ao início">↑</button>
+</body>
 </html>
