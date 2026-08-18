@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 09.
+// As validações desta aula são feitas pelos atributos nativos dos campos HTML.

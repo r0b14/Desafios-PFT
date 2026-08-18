@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 06.
+// A navegação desta aula funciona apenas com os atributos href e id do HTML.

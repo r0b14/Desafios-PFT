@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 05.
+// Esta aula pratica listas e tabelas; por isso, não é necessário usar JavaScript.

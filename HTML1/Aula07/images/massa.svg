@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Mistura da massa</title>
+  <desc id="desc">Uma colher mexe massa de chocolate dentro de uma tigela.</desc>
+  <rect width="640" height="400" fill="#fff0d9"/>
+  <rect y="315" width="640" height="85" fill="#c9976f"/>
+  <path d="M130 185h380q-35 145-190 145T130 185z" fill="#d86f52" stroke="#873c2d" stroke-width="7"/>
+  <ellipse cx="320" cy="185" rx="190" ry="55" fill="#70412c" stroke="#873c2d" stroke-width="7"/>
+  <path d="M310 185q45-60 90 0t90 0" fill="none" stroke="#4f2c20" stroke-width="10"/>
+  <path d="M392 180L500 48" stroke="#8f745f" stroke-width="18" stroke-linecap="round"/>
+  <ellipse cx="510" cy="40" rx="23" ry="38" fill="#b8a08b" transform="rotate(38 510 40)"/>
+</svg>

@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 04.
+// Esta aula não precisa de JavaScript: todo o conteúdo é estruturado com HTML.

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Bolo de chocolate pronto</title>
+  <desc id="desc">Ilustração de um bolo de chocolate com cobertura e morangos.</desc>
+  <rect width="640" height="400" fill="#f7e4cf"/>
+  <ellipse cx="320" cy="335" rx="230" ry="35" fill="#c7aa91"/>
+  <rect x="155" y="170" width="330" height="155" rx="24" fill="#66351f"/>
+  <path d="M155 205 Q205 235 255 205 T355 205 T455 205 Q475 205 485 190 V250 H155Z" fill="#3d2117"/>
+  <ellipse cx="320" cy="175" rx="165" ry="52" fill="#4d291b"/>
+  <g fill="#d93649" stroke="#8e2132" stroke-width="5">
+    <path d="M225 145 C190 105 205 75 230 90 C255 70 275 105 225 145Z"/>
+    <path d="M320 130 C285 90 300 60 325 75 C350 55 370 90 320 130Z"/>
+    <path d="M415 145 C380 105 395 75 420 90 C445 70 465 105 415 145Z"/>
+  </g>
+  <g fill="#4c8b3c"><path d="M218 91l12-24 10 26z"/><path d="M313 76l12-24 10 26z"/><path d="M408 91l12-24 10 26z"/></g>
+</svg>

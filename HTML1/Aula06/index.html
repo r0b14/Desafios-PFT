@@ -3,14 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 06</title>
+    <title>Biografia de Lucas Nascimento</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="inicio">
+    <header>
+        <p>Biografia fictícia</p>
+        <h1>Lucas Nascimento</h1>
+        <p>Um estudante curioso por histórias, música e tecnologia.</p>
+    </header>
+
+    <!-- Cada href começando com # aponta para o id de uma seção desta página. -->
+    <nav aria-label="Índice da biografia">
+        <a href="#biografia">Biografia</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#interesses">Interesses</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
     <main>
-        <h1>HTML1 — Aula 06</h1>
-        <p>Espaço reservado para o projeto desta aula.</p>
+        <section id="biografia">
+            <h2>Quem é Lucas?</h2>
+            <p>
+                Lucas Nascimento tem <strong>17 anos</strong>, mora em Salvador e
+                está concluindo o Ensino Médio. Desde criança, gosta de descobrir
+                como objetos e programas funcionam.
+            </p>
+            <p>
+                Seu objetivo é estudar desenvolvimento de software e criar sites
+                acessíveis que ajudem pessoas de sua comunidade.
+            </p>
+        </section>
+
+        <section id="trajetoria">
+            <h2>Pequena trajetória</h2>
+            <ol>
+                <li>Em 2024, participou de uma feira escolar de ciências.</li>
+                <li>Em 2025, começou a estudar lógica de programação.</li>
+                <li>Em 2026, criou suas primeiras páginas com HTML.</li>
+            </ol>
+        </section>
+
+        <section id="interesses">
+            <h2>Links e conteúdos de interesse</h2>
+            <p>
+                Os três primeiros links abrem em outra aba. Os demais abrem na
+                aba atual.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                        Artigos sobre HTML na MDN
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="noopener noreferrer">
+                        Vídeos de tecnologia do Curso em Vídeo
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.dominiopublico.gov.br/" target="_blank" rel="noopener noreferrer">
+                        Livros no portal Domínio Público
+                    </a>
+                </li>
+                <li><a href="https://scratch.mit.edu/">Criar jogos e histórias no Scratch</a></li>
+                <li><a href="https://artsandculture.google.com/">Conhecer arte no Google Arts &amp; Culture</a></li>
+                <li><a href="https://radio.garden/">Ouvir rádios de diferentes lugares do mundo</a></li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato fictício</h2>
+            <p>E-mail: lucas.nascimento@example.com</p>
+            <p><a href="#inicio">Voltar ao início da página</a></p>
+        </section>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 06 — Biografia com links internos e externos.</p>
+    </footer>
 </body>
 </html>

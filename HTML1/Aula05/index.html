@@ -3,14 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 05</title>
+    <title>Currículo de Marina Oliveira</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Currículo de Marina Oliveira</h1>
+        <p>Estudante de desenvolvimento web</p>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 05</h1>
-        <p>Espaço reservado para o projeto desta aula.</p>
+        <section>
+            <h2>Informações pessoais</h2>
+            <p><strong>Nome:</strong> Marina Oliveira</p>
+            <p><strong>Cidade:</strong> Recife — PE</p>
+            <p><strong>E-mail:</strong> marina.oliveira@example.com</p>
+            <p>
+                <strong>Objetivo:</strong> buscar uma oportunidade de aprendizagem
+                na área de tecnologia e colaborar em projetos digitais.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formação acadêmica</h2>
+            <!-- A lista ordenada apresenta a formação em sequência. -->
+            <ol>
+                <li>Ensino Médio — Escola Florescer (cursando)</li>
+                <li>Introdução à Lógica de Programação — Projeto PFT (2026)</li>
+                <li>Fundamentos de HTML — Projeto PFT (cursando)</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Habilidades e competências</h2>
+            <!-- A lista não ordenada reúne itens sem uma ordem obrigatória. -->
+            <ul>
+                <li>Organização de páginas com HTML semântico</li>
+                <li>Noções de lógica de programação</li>
+                <li>Trabalho em equipe e comunicação</li>
+                <li>Criatividade e vontade de aprender</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cursos e projetos</h2>
+            <div class="tabela-container">
+                <table>
+                    <caption>Atividades relevantes para a formação</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Atividade</th>
+                            <th scope="col">Instituição</th>
+                            <th scope="col">Ano</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Página de receitas</td>
+                            <td>Projeto PFT</td>
+                            <td>2026</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Currículo em HTML</td>
+                            <td>Projeto PFT</td>
+                            <td>2026</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Fundamentos de CSS</td>
+                            <td>Plataforma Escola Web</td>
+                            <td>2026</td>
+                            <td>Em andamento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 05 — Currículo digital com listas e tabela.</p>
+    </footer>
 </body>
 </html>

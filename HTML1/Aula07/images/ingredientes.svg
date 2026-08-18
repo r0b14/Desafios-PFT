@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Ingredientes separados</title>
+  <desc id="desc">Tigelas com farinha, chocolate, ovos e uma jarra de leite.</desc>
+  <rect width="640" height="400" fill="#e6f2e4"/>
+  <rect y="300" width="640" height="100" fill="#bd8f69"/>
+  <g stroke="#684832" stroke-width="5">
+    <path d="M65 230h180q-20 85-90 85t-90-85z" fill="#75a9d6"/>
+    <path d="M270 230h180q-20 85-90 85t-90-85z" fill="#e6a45b"/>
+    <ellipse cx="155" cy="230" rx="90" ry="22" fill="#faf5e8"/>
+    <ellipse cx="360" cy="230" rx="90" ry="22" fill="#6b3a26"/>
+    <path d="M480 115h100v190H480z" fill="#f6fbff"/>
+    <path d="M580 155q55 5 30 80-12 28-30 18" fill="none"/>
+  </g>
+  <g fill="#f0d29a" stroke="#b78442" stroke-width="4"><ellipse cx="200" cy="160" rx="30" ry="39"/><ellipse cx="260" cy="165" rx="30" ry="39"/></g>
+</svg>

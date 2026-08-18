@@ -1,1 +1,127 @@
-/* Estilos iniciais de HTML1, Aula 07. */
+/* AULA 07 - MÍDIAS: imagens, legendas e vídeo complementam cada instrução. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #3b2925;
+    background-color: #fff8ef;
+}
+
+header {
+    padding: 42px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #673626;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 26px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 2px solid #ecd3bd;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #7a3427;
+}
+
+.numero {
+    margin-bottom: 5px;
+    color: #a54c36;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    padding-top: 8px;
+    color: #67544d;
+    font-size: 0.9rem;
+}
+
+.aviso,
+aside {
+    padding: 14px;
+    background-color: #fff2c7;
+    border-left: 5px solid #e4a11b;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: #f3e5dc;
+    border-radius: 3px;
+}
+
+aside {
+    margin-bottom: 28px;
+    border-radius: 6px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #45251b;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}

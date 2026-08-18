@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 07.
+// Imagens e vídeos são incorporados diretamente com elementos HTML nesta aula.

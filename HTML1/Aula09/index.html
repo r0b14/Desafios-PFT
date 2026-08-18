@@ -3,14 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 09</title>
+    <title>Cadastro de Perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Crie seu perfil</h1>
+        <p>Preencha os campos para praticar formulários e validações do HTML.</p>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 09</h1>
-        <p>Espaço reservado para o próximo projeto.</p>
+        <!-- O action vazio representa o endereço que receberia os dados em um projeto real. -->
+        <form action="" method="post">
+            <fieldset>
+                <legend>Dados de acesso</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        minlength="3"
+                        maxlength="50"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                        required>
+                    <small>Use entre 3 e 50 caracteres.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@dominio.com"
+                        autocomplete="email"
+                        required>
+                    <small>O navegador verifica se o formato do e-mail é válido.</small>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        minlength="8"
+                        maxlength="20"
+                        placeholder="Crie uma senha segura"
+                        autocomplete="new-password"
+                        required>
+                    <small>Use entre 8 e 20 caracteres.</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sobre você</legend>
+
+                <div class="campo">
+                    <label for="biografia">Biografia</label>
+                    <textarea
+                        id="biografia"
+                        name="biografia"
+                        rows="5"
+                        maxlength="200"
+                        placeholder="Fale um pouco sobre você"></textarea>
+                    <small>Escreva no máximo 200 caracteres.</small>
+                </div>
+
+                <div class="grupo-opcoes">
+                    <p>Gênero</p>
+                    <!-- Todos os radios têm o mesmo name; por isso, apenas um pode ser escolhido. -->
+                    <label><input type="radio" name="genero" value="feminino" required> Feminino</label>
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="nao-binario"> Não binário</label>
+                    <label><input type="radio" name="genero" value="nao-informar"> Prefiro não informar</label>
+                </div>
+
+                <div class="grupo-opcoes">
+                    <p>Hobbies e interesses</p>
+                    <!-- Checkboxes permitem marcar mais de uma alternativa. -->
+                    <label><input type="checkbox" name="interesses" value="musica"> Música</label>
+                    <label><input type="checkbox" name="interesses" value="esportes"> Esportes</label>
+                    <label><input type="checkbox" name="interesses" value="leitura"> Leitura</label>
+                    <label><input type="checkbox" name="interesses" value="jogos"> Jogos</label>
+                    <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+                </div>
+            </fieldset>
+
+            <div class="acoes">
+                <input type="submit" value="Enviar cadastro">
+                <input type="reset" value="Limpar formulário">
+            </div>
+        </form>
+
+        <aside>
+            <h2>Validação nativa</h2>
+            <p>
+                Tente enviar o formulário sem preencher os campos obrigatórios
+                ou com uma senha curta. O próprio navegador mostrará os avisos
+                definidos pelos atributos do HTML.
+            </p>
+        </aside>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 09 — Formulário de cadastro de perfil.</p>
+    </footer>
 </body>
 </html>

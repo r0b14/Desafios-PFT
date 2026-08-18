@@ -1,1 +1,129 @@
-/* Estilos iniciais de HTML1, Aula 08. */
+/* AULA 08 - SVG: o CSS apresenta o dashboard e também estiliza formas e textos. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #edf4f8;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #174d73;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 920px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section,
+aside {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #174d73;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #aac1cf;
+}
+
+th {
+    color: #ffffff;
+    background-color: #2474a6;
+}
+
+.grafico-container {
+    overflow-x: auto;
+}
+
+svg {
+    display: block;
+    min-width: 660px;
+    background-color: #f9fcfe;
+    border: 1px solid #c9dce7;
+}
+
+.eixo {
+    stroke: #263238;
+    stroke-width: 3;
+}
+
+.guias line {
+    stroke: #c4d3dc;
+    stroke-width: 1;
+    stroke-dasharray: 6 6;
+}
+
+.guias text,
+.rotulos,
+.valores {
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #263238;
+}
+
+.guias text {
+    text-anchor: middle;
+}
+
+.rotulos {
+    font-size: 13px;
+    text-anchor: middle;
+}
+
+.valores {
+    font-size: 18px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+rect:hover {
+    fill: #ffb300;
+}
+
+aside {
+    background-color: #fff6d8;
+    border-left: 6px solid #ffb300;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #10364f;
+}
+
+footer p {
+    margin: 0;
+}

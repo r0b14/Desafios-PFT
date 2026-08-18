@@ -3,14 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 07</title>
+    <title>Tutorial — Bolo de Chocolate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <p>Tutorial passo a passo</p>
+        <h1>Como fazer um bolo de chocolate</h1>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 07</h1>
-        <p>Espaço reservado para o próximo projeto.</p>
+        <section>
+            <div class="texto-etapa">
+                <p class="numero">Etapa 1</p>
+                <h2>Introdução</h2>
+                <p>Neste tutorial, você aprenderá a fazer um bolo de chocolate simples e delicioso!</p>
+            </div>
+            <figure>
+                <img src="images/bolo-pronto.svg" alt="Bolo de chocolate pronto, decorado com cobertura e morangos">
+                <figcaption>Resultado esperado ao final do tutorial.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <div class="texto-etapa">
+                <p class="numero">Etapa 2</p>
+                <h2>Separe os ingredientes</h2>
+                <ul>
+                    <li>2 xícaras de farinha de trigo</li>
+                    <li>1 xícara de açúcar</li>
+                    <li>1 xícara de chocolate em pó</li>
+                    <li>1/2 xícara de óleo</li>
+                    <li>4 ovos</li>
+                    <li>1 colher de sopa de fermento em pó</li>
+                    <li>1 xícara de leite</li>
+                </ul>
+            </div>
+            <figure>
+                <img src="images/ingredientes.svg" alt="Tigelas com farinha, chocolate, ovos e leite separados">
+                <figcaption>Separar os itens antes de começar facilita o preparo.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <div class="texto-etapa">
+                <p class="numero">Etapa 3</p>
+                <h2>Prepare a massa</h2>
+                <p>
+                    Misture todos os ingredientes secos e, em seguida, adicione
+                    os molhados. Misture até ficar homogêneo.
+                </p>
+            </div>
+            <figure>
+                <img src="images/massa.svg" alt="Tigela com massa de chocolate sendo misturada por uma colher">
+                <figcaption>A massa deve ficar lisa e sem partes secas.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <div class="texto-etapa">
+                <p class="numero">Etapa 4</p>
+                <h2>Asse o bolo</h2>
+                <p>
+                    Despeje a massa em uma forma untada e asse em forno
+                    preaquecido a <strong>180&nbsp;°C por 30 minutos</strong>.
+                </p>
+                <p class="aviso"><strong>Atenção:</strong> peça ajuda a um adulto para usar o forno.</p>
+            </div>
+            <figure>
+                <img src="images/forno.svg" alt="Forma com bolo de chocolate assando dentro do forno">
+                <figcaption>Evite abrir o forno durante os primeiros 20 minutos.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <div class="texto-etapa">
+                <p class="numero">Etapa 5</p>
+                <h2>Decore e sirva</h2>
+                <p>Deixe esfriar, decore a gosto e aproveite!</p>
+            </div>
+            <figure>
+                <img src="images/decoracao.svg" alt="Pessoa decorando um bolo de chocolate com morangos">
+                <figcaption>Use frutas, confeitos ou raspas de chocolate.</figcaption>
+            </figure>
+        </section>
+
+        <section class="video">
+            <div class="texto-etapa">
+                <p class="numero">Conteúdo complementar</p>
+                <h2>Veja o preparo em vídeo</h2>
+                <p>
+                    O elemento <code>&lt;iframe&gt;</code> incorpora na página um
+                    vídeo hospedado em outro site.
+                </p>
+            </div>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/wPEoq3t8xz8"
+                    title="Vídeo: bolo de chocolate simples e fácil"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Observe no código</h2>
+            <p>
+                O atributo <code>src</code> informa o arquivo da imagem e o
+                atributo <code>alt</code> descreve seu conteúdo para quem não
+                consegue vê-la. <code>&lt;figure&gt;</code> agrupa a mídia e sua legenda.
+            </p>
+        </aside>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 07 — Imagens e vídeo em uma página HTML.</p>
+    </footer>
 </body>
 </html>

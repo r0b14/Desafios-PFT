@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Decoração do bolo</title>
+  <desc id="desc">Bolo de chocolate recebendo morangos e confeitos coloridos.</desc>
+  <rect width="640" height="400" fill="#f8e6ed"/>
+  <ellipse cx="320" cy="330" rx="230" ry="32" fill="#c8a891"/>
+  <rect x="155" y="190" width="330" height="130" rx="22" fill="#633621"/>
+  <ellipse cx="320" cy="190" rx="165" ry="50" fill="#4b291c"/>
+  <g fill="#f6c344"><circle cx="260" cy="180" r="7"/><circle cx="360" cy="205" r="7"/><circle cx="415" cy="180" r="7"/></g>
+  <g fill="#67a44c"><circle cx="230" cy="198" r="7"/><circle cx="325" cy="170" r="7"/><circle cx="390" cy="210" r="7"/></g>
+  <path d="M305 145c-38-44-20-75 5-57 25-22 47 14-5 57z" fill="#d83c50" stroke="#902535" stroke-width="5"/>
+  <path d="M295 89l15-26 12 27z" fill="#4d913d"/>
+  <path d="M500 45q-75 55-115 125" fill="none" stroke="#e3b48f" stroke-width="25" stroke-linecap="round"/>
+</svg>

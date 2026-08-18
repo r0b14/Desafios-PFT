@@ -1,1 +1,89 @@
-/* Estilos iniciais de HTML1, Aula 05. */
+/* AULA 05 - CURRÍCULO DIGITAL: listas e tabelas organizam as informações. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #eef3f6;
+}
+
+header {
+    padding: 38px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #24526b;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 22px;
+    padding: 22px;
+    background-color: #ffffff;
+    border-top: 4px solid #2b7a78;
+    border-radius: 6px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #24526b;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 11px;
+    text-align: left;
+    border: 1px solid #9fb5c0;
+}
+
+th {
+    color: #ffffff;
+    background-color: #2b7a78;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf6f5;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #183847;
+}
+
+footer p {
+    margin: 0;
+}

@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 10</title>
+    <title>Mini Banco PFT</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <p>Projeto de eventos com JavaScript</p>
+        <h1>Mini Banco PFT</h1>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 10</h1>
-        <p>Espaço reservado para o próximo projeto.</p>
+        <section>
+            <h2>Olá! Bem-vindo à sua conta.</h2>
+            <p>Use o formulário para adicionar dinheiro ao saldo.</p>
+
+            <form id="formulario-deposito">
+                <label for="valor">Valor do depósito</label>
+                <input
+                    type="number"
+                    id="valor"
+                    name="valor"
+                    min="1"
+                    step="0.01"
+                    placeholder="Ex.: 50,00"
+                    required>
+                <button type="submit">Adicionar dinheiro</button>
+            </form>
+        </section>
+
+        <!-- Os eventos mouseenter e mouseleave serão associados a esta área. -->
+        <section id="area-saldo" tabindex="0" aria-describedby="mensagem-hover">
+            <h2>Saldo da conta</h2>
+            <p class="saldo">R$ <span id="saldo">0,00</span></p>
+            <p id="mensagem-hover" aria-live="polite"></p>
+        </section>
+
+        <p id="mensagem-operacao" role="status" aria-live="polite"></p>
+
+        <aside>
+            <h2>Como testar</h2>
+            <ol>
+                <li>Digite um valor maior ou igual a R$ 1,00.</li>
+                <li>Clique em “Adicionar dinheiro”.</li>
+                <li>Passe o mouse sobre o saldo para exibir a mensagem.</li>
+            </ol>
+        </aside>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 10 — Eventos de formulário e mouse.</p>
+    </footer>
 </body>
 </html>

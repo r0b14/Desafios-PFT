@@ -1,1 +1,82 @@
-/* Estilos iniciais de HTML1, Aula 04. */
+/*
+    AULA 04 - CABEÇALHOS E FORMATAÇÃO DE TEXTO
+    O visual é simples para que a hierarquia criada no HTML continue evidente.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #3b2520;
+    background-color: #fff8f3;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #71352b;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+header h1 {
+    margin: 6px 0;
+}
+
+.categoria {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 820px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section,
+aside {
+    margin-bottom: 24px;
+    padding: 22px;
+    background-color: #ffffff;
+    border-left: 6px solid #d0644d;
+    border-radius: 6px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #853b2d;
+}
+
+h3 {
+    color: #a34f3d;
+}
+
+section p {
+    margin: 8px 0;
+}
+
+aside {
+    background-color: #fff0cf;
+    border-left-color: #e5a62b;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4b241e;
+}
+
+footer p {
+    margin: 0;
+}

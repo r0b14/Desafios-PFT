@@ -1,1 +1,119 @@
-/* Estilos iniciais de HTML1, Aula 10. */
+/*
+    AULA 10 - EVENTOS
+    O CSS cuida apenas da apresentação. As interações estão no script.js.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f3440;
+    background-color: #eef5f2;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #176b55;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section,
+aside {
+    margin-bottom: 22px;
+    padding: 22px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #176b55;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+button {
+    padding: 11px;
+    font: inherit;
+    border-radius: 4px;
+}
+
+input {
+    border: 1px solid #82958e;
+}
+
+button {
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #176b55;
+    border: 0;
+}
+
+input:focus,
+button:focus,
+#area-saldo:focus {
+    outline: 3px solid #f4b942;
+}
+
+#area-saldo {
+    text-align: center;
+    border: 3px solid #60a68f;
+}
+
+.saldo {
+    margin: 8px 0;
+    color: #104d3e;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#mensagem-hover,
+#mensagem-operacao {
+    min-height: 1.6em;
+    font-weight: bold;
+}
+
+#mensagem-operacao {
+    color: #176b55;
+}
+
+aside {
+    background-color: #fff3ce;
+    border-left: 6px solid #f4b942;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #104d3e;
+}
+
+footer p {
+    margin: 0;
+}

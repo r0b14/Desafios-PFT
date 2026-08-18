@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Bolo no forno</title>
+  <desc id="desc">Forno ligado a 180 graus com uma forma de bolo dentro.</desc>
+  <rect width="640" height="400" fill="#e4ecf2"/>
+  <rect x="120" y="45" width="400" height="330" rx="18" fill="#66737d"/>
+  <rect x="150" y="125" width="340" height="210" rx="10" fill="#263238" stroke="#aebbc4" stroke-width="8"/>
+  <rect x="205" y="235" width="230" height="35" rx="8" fill="#b8743d"/>
+  <path d="M225 235q15-85 95-85t95 85" fill="#63351f"/>
+  <g fill="#d9e2e8"><circle cx="200" cy="88" r="19"/><circle cx="260" cy="88" r="19"/><circle cx="440" cy="88" r="19"/></g>
+  <text x="330" y="98" font-family="Arial" font-size="30" fill="#f5c451">180 °C</text>
+</svg>

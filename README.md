@@ -50,7 +50,7 @@ O conteúdo foi organizado para que cada exercício trabalhe um conjunto pequeno
 | Trilha | Conteúdo principal | Situação atual |
 | --- | --- | :---: |
 | [Lógica](./Lógica/) | Algoritmos e fundamentos de programação com Python | ✅ Conteúdo disponível |
-| [HTML1](./HTML1/) | Estrutura do documento, semântica, listas e tabelas | 🚧 Aulas 01–03 implementadas |
+| [HTML1](./HTML1/) | Estrutura, semântica, formatação, mídias, SVG, formulários e eventos | ✅ Aulas 01–10 implementadas |
 | [HTML2](./HTML2/) | Continuação dos fundamentos e recursos do HTML | 🧱 Estrutura preparada |
 | [CSS-1](./CSS-1/) | Cores, fundos, bordas, espaçamentos, Box Model e fontes | 🚧 Aulas 02–06 implementadas |
 | [JS-1](./JS-1/) | Variáveis, condicionais, repetições, funções e arrays | ✅ Projetos disponíveis |
@@ -84,6 +84,13 @@ flowchart LR
 | [01](./HTML1/Aula01/) | Fundamentos do HTML | `html`, `head`, `body`, títulos e parágrafos |
 | [02](./HTML1/Aula02/) | Análise de um portal de notícias | Semântica, contraste, alinhamento, repetição e proximidade |
 | [03](./HTML1/Aula03/) | Receita de bolo de chocolate | Listas, tabelas, navegação interna e `details` |
+| [04](./HTML1/Aula04/) | Receita com texto formatado | Cabeçalhos, parágrafos, `strong`, `b`, `i` e `u` |
+| [05](./HTML1/Aula05/) | Currículo digital | Listas ordenadas, listas não ordenadas e tabelas |
+| [06](./HTML1/Aula06/) | Página biográfica | Links internos, links externos, `href`, `id` e `target` |
+| [07](./HTML1/Aula07/) | Tutorial de bolo com mídias | Imagens, texto alternativo, legendas e vídeo incorporado |
+| [08](./HTML1/Aula08/) | Dashboard de pesquisa | SVG, retângulos, coordenadas, cores e gradiente |
+| [09](./HTML1/Aula09/) | Cadastro de perfil | Formulários, campos, opções e validação nativa |
+| [10](./HTML1/Aula10/) | Mini banco | Formulário, DOM e eventos de envio e mouse |
 
 ### CSS 1
 

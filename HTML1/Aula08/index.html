@@ -3,14 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 08</title>
+    <title>Dashboard SVG — Jogos Favoritos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <p>Pesquisa com 30 estudantes</p>
+        <h1>Jogos favoritos da turma</h1>
+        <p>Um dashboard construído com formas vetoriais SVG.</p>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 08</h1>
-        <p>Espaço reservado para o próximo projeto.</p>
+        <section>
+            <h2>Dados coletados</h2>
+            <p>
+                Cada estudante escolheu um tipo de jogo. A tabela apresenta os
+                valores usados para calcular a altura das barras.
+            </p>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo de jogo</th>
+                            <th scope="col">Votos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Aventura</td><td>9</td></tr>
+                        <tr><td>Esportes</td><td>7</td></tr>
+                        <tr><td>Estratégia</td><td>6</td></tr>
+                        <tr><td>Corrida</td><td>5</td></tr>
+                        <tr><td>Quebra-cabeça</td><td>3</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gráfico de barras</h2>
+            <p>Escala: cada voto corresponde a 25 pixels de altura.</p>
+
+            <!--
+                viewBox cria um sistema de coordenadas de 0 a 700 na horizontal
+                e de 0 a 430 na vertical. Em SVG, o ponto (0, 0) fica no alto.
+            -->
+            <div class="grafico-container">
+                <svg viewBox="0 0 700 430" role="img" aria-labelledby="titulo-grafico descricao-grafico">
+                    <title id="titulo-grafico">Gráfico de jogos favoritos da turma</title>
+                    <desc id="descricao-grafico">
+                        Aventura recebeu 9 votos, esportes 7, estratégia 6,
+                        corrida 5 e quebra-cabeça 3.
+                    </desc>
+
+                    <defs>
+                        <linearGradient id="gradienteBarras" x1="0" y1="1" x2="0" y2="0">
+                            <stop offset="0%" stop-color="#1565c0"/>
+                            <stop offset="100%" stop-color="#64b5f6"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Eixos do gráfico. -->
+                    <line x1="70" y1="40" x2="70" y2="350" class="eixo"/>
+                    <line x1="70" y1="350" x2="665" y2="350" class="eixo"/>
+
+                    <!-- Linhas-guia e números do eixo vertical. -->
+                    <g class="guias">
+                        <line x1="70" y1="350" x2="665" y2="350"/><text x="45" y="356">0</text>
+                        <line x1="70" y1="225" x2="665" y2="225"/><text x="45" y="231">5</text>
+                        <line x1="70" y1="100" x2="665" y2="100"/><text x="38" y="106">10</text>
+                    </g>
+
+                    <!-- Todas as barras têm width 75; y e height variam conforme os votos. -->
+                    <g fill="url(#gradienteBarras)">
+                        <rect x="100" y="125" width="75" height="225" rx="5"><title>Aventura: 9 votos</title></rect>
+                        <rect x="220" y="175" width="75" height="175" rx="5"><title>Esportes: 7 votos</title></rect>
+                        <rect x="340" y="200" width="75" height="150" rx="5"><title>Estratégia: 6 votos</title></rect>
+                        <rect x="460" y="225" width="75" height="125" rx="5"><title>Corrida: 5 votos</title></rect>
+                        <rect x="580" y="275" width="75" height="75" rx="5"><title>Quebra-cabeça: 3 votos</title></rect>
+                    </g>
+
+                    <!-- Valores e rótulos ajudam a interpretar o desenho. -->
+                    <g class="valores">
+                        <text x="137" y="115">9</text><text x="257" y="165">7</text>
+                        <text x="377" y="190">6</text><text x="497" y="215">5</text>
+                        <text x="617" y="265">3</text>
+                    </g>
+                    <g class="rotulos">
+                        <text x="137" y="378">Aventura</text>
+                        <text x="257" y="378">Esportes</text>
+                        <text x="377" y="378">Estratégia</text>
+                        <text x="497" y="378">Corrida</text>
+                        <text x="617" y="373"><tspan x="617">Quebra-</tspan><tspan x="617" dy="17">cabeça</tspan></text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Como calcular cada barra?</h2>
+            <p>
+                Para Aventura: <strong>9 votos × 25 px = 225 px</strong> de altura.
+                Como o eixo termina em y=350, a barra começa em
+                <strong>y = 350 − 225 = 125</strong>.
+            </p>
+        </aside>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 08 — Visualização de dados com SVG.</p>
+    </footer>
 </body>
 </html>

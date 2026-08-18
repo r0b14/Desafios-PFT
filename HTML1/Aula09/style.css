@@ -1,1 +1,139 @@
-/* Estilos iniciais de HTML1, Aula 09. */
+/* AULA 09 - FORMULÁRIOS: labels, fieldsets e estados de foco melhoram a usabilidade. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #29333d;
+    background-color: #f2f5f7;
+}
+
+header {
+    padding: 38px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #355c7d;
+}
+
+header h1,
+header p {
+    margin: 0;
+}
+
+main {
+    max-width: 760px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+form,
+aside {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+fieldset {
+    margin: 0 0 24px;
+    padding: 20px;
+    border: 2px solid #b6c7d5;
+    border-radius: 6px;
+}
+
+legend {
+    padding: 0 8px;
+    color: #355c7d;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label,
+.grupo-opcoes p {
+    display: block;
+    margin: 0 0 6px;
+    font-weight: bold;
+}
+
+.campo input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    font: inherit;
+    border: 1px solid #8297a6;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+textarea:focus {
+    outline: 3px solid #f2c14e;
+    border-color: #355c7d;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #566773;
+}
+
+.grupo-opcoes {
+    margin-bottom: 22px;
+}
+
+.grupo-opcoes label {
+    display: block;
+    margin: 8px 0;
+}
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.acoes input {
+    padding: 11px 18px;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #26734d;
+    border: 0;
+    border-radius: 4px;
+}
+
+.acoes input[type="reset"] {
+    background-color: #9b3d3d;
+}
+
+aside {
+    margin-top: 24px;
+    background-color: #fff5cf;
+    border-left: 6px solid #f2c14e;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+footer {
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #263f54;
+}
+
+footer p {
+    margin: 0;
+}

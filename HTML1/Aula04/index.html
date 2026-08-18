@@ -3,14 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML1 - Aula 04</title>
+    <title>Receita de Bolo de Chocolate com Morangos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <p class="categoria">Receita para compartilhar</p>
+        <h1>Bolo de Chocolate com Morangos</h1>
+        <p>Uma receita simples para aprender hierarquia e formatação de texto em HTML.</p>
+    </header>
+
     <main>
-        <h1>HTML1 — Aula 04</h1>
-        <p>Espaço reservado para o projeto desta aula.</p>
+        <!-- h2 divide os assuntos principais da página. -->
+        <section>
+            <h2>Sobre a receita</h2>
+            <p>
+                Este bolo combina uma massa de chocolate macia com morangos frescos.
+                O preparo leva cerca de <strong>50 minutos</strong> e rende
+                <b>12 porções</b>.
+            </p>
+            <p>
+                <strong>Atenção:</strong> peça a ajuda de um adulto para usar o forno.
+                Sirva o bolo <i>depois que ele esfriar</i>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ingredientes</h2>
+
+            <!-- h3 cria uma subseção dentro do assunto indicado pelo h2. -->
+            <h3>Para a massa</h3>
+            <p><b>2 xícaras</b> de farinha de trigo</p>
+            <p><b>1 xícara</b> de açúcar</p>
+            <p><b>1 xícara</b> de chocolate em pó</p>
+            <p><b>3 unidades</b> de ovos</p>
+            <p><b>1 xícara</b> de leite</p>
+            <p><b>1 colher</b> de fermento em pó</p>
+
+            <h3>Para decorar</h3>
+            <p><b>200 g</b> de chocolate meio amargo</p>
+            <p><b>1 caixa</b> de morangos lavados</p>
+        </section>
+
+        <section>
+            <h2>Modo de preparo</h2>
+
+            <h3>1. Prepare a massa</h3>
+            <p>
+                Misture os ovos, o açúcar e o leite. Acrescente a farinha e o
+                chocolate em pó e mexa até obter uma massa <i>lisa e homogênea</i>.
+                Por último, adicione o fermento com movimentos suaves.
+            </p>
+
+            <h3>2. Asse o bolo</h3>
+            <p>
+                Coloque a massa em uma forma untada e leve ao forno preaquecido
+                a <strong>180&nbsp;°C por aproximadamente 35 minutos</strong>.
+            </p>
+
+            <h3>3. Decore</h3>
+            <p>
+                Cubra o bolo já frio com o chocolate derretido e distribua os
+                morangos. <u>Seque bem os morangos antes de decorar</u> para a
+                cobertura não ficar aguada.
+            </p>
+        </section>
+
+        <aside>
+            <h2>Observe no código</h2>
+            <p>
+                <b>&lt;b&gt;</b> chama atenção visualmente, enquanto
+                <strong>&lt;strong&gt;</strong> indica que uma informação é importante.
+                <i>&lt;i&gt;</i> diferencia uma expressão e <u>&lt;u&gt;</u> marca um trecho.
+            </p>
+        </aside>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer>
+        <p>Miniprojeto da Aula 04 — Cabeçalhos e formatação de texto.</p>
+    </footer>
 </body>
 </html>

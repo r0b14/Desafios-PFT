@@ -1,1 +1,1 @@
-// Scripts iniciais de HTML1, Aula 08.
+// O gráfico é construído com elementos SVG no próprio HTML, sem JavaScript.
