@@ -3,14 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 08</title>
+    <meta name="description" content="Catálogo de filmes organizado por gêneros.">
+    <title>CineVerse | Catálogo de filmes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>Aula 08</h1>
-        <p>Espaço reservado para o próximo projeto de CSS.</p>
+    <!-- Este link aparece quando a pessoa navega usando a tecla Tab. -->
+    <a class="pular-conteudo" href="#catalogo">Pular para o catálogo</a>
+
+    <header class="cabecalho" id="inicio">
+        <nav class="navegacao limite" aria-label="Navegação principal">
+            <a class="logo" href="#inicio" aria-label="CineVerse - página inicial">
+                <span aria-hidden="true">▶</span> Cine<span>Verse</span>
+            </a>
+
+            <!-- Este botão aparece somente em telas pequenas. -->
+            <button class="botao-menu" type="button" aria-label="Abrir menu"
+                aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Uma lista é a estrutura ideal para um conjunto de links. -->
+            <ul class="menu" id="menu-principal">
+                <li><a href="#inicio">Início</a></li>
+
+                <li class="item-dropdown">
+                    <button class="botao-dropdown" type="button"
+                        aria-expanded="false" aria-controls="submenu-generos">
+                        Gêneros <span aria-hidden="true">▾</span>
+                    </button>
+
+                    <!-- Dropdown: uma lista dentro de um item da lista principal. -->
+                    <ul class="submenu" id="submenu-generos">
+                        <li><a href="#acao">Ação</a></li>
+                        <li><a href="#animacao">Animação</a></li>
+                        <li><a href="#ficcao">Ficção científica</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#lancamentos">Lançamentos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="catalogo">
+        <section class="destaque" aria-labelledby="titulo-destaque">
+            <div class="limite conteudo-destaque">
+                <p class="etiqueta">Sua próxima história começa aqui</p>
+                <h1 id="titulo-destaque">Filmes para todos os <span>universos</span></h1>
+                <p class="texto-destaque">
+                    Explore aventuras eletrizantes, animações inesquecíveis e viagens
+                    além da imaginação.
+                </p>
+                <a class="botao-destaque" href="#acao">
+                    Explorar catálogo <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Cada link do menu aponta para o id de uma destas seções. -->
+        <section class="secao-genero limite" id="acao" aria-labelledby="titulo-acao">
+            <div class="titulo-secao">
+                <div>
+                    <p class="numero-genero">01 / CATÁLOGO</p>
+                    <h2 id="titulo-acao">Ação</h2>
+                </div>
+                <p>Adrenalina do início ao fim</p>
+            </div>
+
+            <ul class="grade-filmes">
+                <li class="cartao-filme">
+                    <div class="capa capa-acao-1" role="img"
+                        aria-label="Ilustração abstrata do filme Mad Max: Estrada da Fúria">
+                        <span class="selo">DESTAQUE</span>
+                        <span class="icone-capa" aria-hidden="true">⚡</span>
+                        <strong>Mad Max</strong>
+                        <small>Estrada da Fúria</small>
+                    </div>
+                    <div class="dados-filme">
+                        <h3>Mad Max: Estrada da Fúria</h3>
+                        <p class="detalhes">2015 <span>•</span> Ação e aventura</p>
+                        <p>Em um mundo devastado, Max se une a Furiosa em uma fuga explosiva pelo deserto.</p>
+                        <ul class="tags" aria-label="Características do filme">
+                            <li>Ação</li>
+                            <li>Aventura</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="cartao-filme">
+                    <div class="capa capa-acao-2" role="img"
+                        aria-label="Ilustração abstrata do filme Missão: Impossível">
+                        <span class="selo">CLÁSSICO</span>
+                        <span class="icone-capa" aria-hidden="true">◆</span>
+                        <strong>Missão</strong>
+                        <small>Impossível</small>
+                    </div>
+                    <div class="dados-filme">
+                        <h3>Missão: Impossível</h3>
+                        <p class="detalhes">1996 <span>•</span> Ação e espionagem</p>
+                        <p>O agente Ethan Hunt precisa descobrir o verdadeiro traidor em uma missão cheia de reviravoltas.</p>
+                        <ul class="tags" aria-label="Características do filme">
+                            <li>Ação</li>
+                            <li>Espionagem</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="secao-genero secao-alternada" id="animacao"
+            aria-labelledby="titulo-animacao">
+            <div class="limite">
+                <div class="titulo-secao">
+                    <div>
+                        <p class="numero-genero">02 / CATÁLOGO</p>
+                        <h2 id="titulo-animacao">Animação</h2>
+                    </div>
+                    <p>Imaginação sem limites</p>
+                </div>
+
+                <ul class="grade-filmes">
+                    <li class="cartao-filme">
+                        <div class="capa capa-animacao-1" role="img"
+                            aria-label="Ilustração abstrata do filme Homem-Aranha no Aranhaverso">
+                            <span class="selo">HERÓIS</span>
+                            <span class="icone-capa" aria-hidden="true">✦</span>
+                            <strong>Aranha</strong>
+                            <small>no Aranhaverso</small>
+                        </div>
+                        <div class="dados-filme">
+                            <h3>Homem-Aranha no Aranhaverso</h3>
+                            <p class="detalhes">2018 <span>•</span> Animação e aventura</p>
+                            <p>Miles Morales encontra heróis de outras dimensões e descobre sua própria forma de ser herói.</p>
+                            <ul class="tags" aria-label="Características do filme">
+                                <li>Animação</li>
+                                <li>Aventura</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="cartao-filme">
+                        <div class="capa capa-animacao-2" role="img"
+                            aria-label="Ilustração abstrata do filme Toy Story">
+                            <span class="selo">FAMÍLIA</span>
+                            <span class="icone-capa" aria-hidden="true">☁</span>
+                            <strong>Toy Story</strong>
+                            <small>Um mundo de aventuras</small>
+                        </div>
+                        <div class="dados-filme">
+                            <h3>Toy Story</h3>
+                            <p class="detalhes">1995 <span>•</span> Animação e comédia</p>
+                            <p>Woody e Buzz aprendem o valor da amizade enquanto tentam voltar para casa.</p>
+                            <ul class="tags" aria-label="Características do filme">
+                                <li>Animação</li>
+                                <li>Família</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao-genero limite" id="ficcao" aria-labelledby="titulo-ficcao">
+            <div class="titulo-secao">
+                <div>
+                    <p class="numero-genero">03 / CATÁLOGO</p>
+                    <h2 id="titulo-ficcao">Ficção científica</h2>
+                </div>
+                <p>Outros mundos estão à espera</p>
+            </div>
+
+            <ul class="grade-filmes">
+                <li class="cartao-filme">
+                    <div class="capa capa-ficcao-1" role="img"
+                        aria-label="Ilustração abstrata do filme Interestelar">
+                        <span class="selo">ESPAÇO</span>
+                        <span class="icone-capa" aria-hidden="true">◎</span>
+                        <strong>Interestelar</strong>
+                        <small>Além do tempo</small>
+                    </div>
+                    <div class="dados-filme">
+                        <h3>Interestelar</h3>
+                        <p class="detalhes">2014 <span>•</span> Ficção e drama</p>
+                        <p>Uma equipe de astronautas atravessa o espaço em busca de um novo lar para a humanidade.</p>
+                        <ul class="tags" aria-label="Características do filme">
+                            <li>Ficção</li>
+                            <li>Drama</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="cartao-filme">
+                    <div class="capa capa-ficcao-2" role="img"
+                        aria-label="Ilustração abstrata do filme Matrix">
+                        <span class="selo">CULT</span>
+                        <span class="icone-capa" aria-hidden="true">01</span>
+                        <strong>Matrix</strong>
+                        <small>A realidade é uma escolha</small>
+                    </div>
+                    <div class="dados-filme">
+                        <h3>Matrix</h3>
+                        <p class="detalhes">1999 <span>•</span> Ficção e ação</p>
+                        <p>Neo descobre que o mundo conhecido pode ser uma simulação e precisa escolher seu caminho.</p>
+                        <ul class="tags" aria-label="Características do filme">
+                            <li>Ficção</li>
+                            <li>Ação</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="chamada" id="lancamentos" aria-labelledby="titulo-lancamentos">
+            <div class="limite">
+                <p class="etiqueta">EM BREVE</p>
+                <h2 id="titulo-lancamentos">Novas histórias estão chegando</h2>
+                <p>Continue explorando o catálogo e encontre seu próximo filme favorito.</p>
+                <a href="#inicio">Voltar ao início ↑</a>
+            </div>
+        </section>
     </main>
-    <script src="script.js" defer></script>
+
+    <footer id="sobre">
+        <div class="limite rodape">
+            <a class="logo" href="#inicio">
+                <span aria-hidden="true">▶</span> Cine<span>Verse</span>
+            </a>
+            <p>Miniprojeto da Aula 08 — Lists, navegação e dropdowns.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
