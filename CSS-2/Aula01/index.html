@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 boas práticas de seletores CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="infografico">
+    <header>
+      <p class="etiqueta">GUIA RÁPIDO</p>
+      <h1>5 boas práticas de seletores CSS</h1>
+      <p>Seletores bem escolhidos deixam o código mais claro, fácil de manter e reaproveitar.</p>
+    </header>
+    <section class="dicas" aria-label="Cinco dicas de CSS">
+      <article class="dica"><span>01</span><h2>Prefira classes</h2><p>Classes podem ser reutilizadas em vários elementos.</p><code>.botao { color: white; }</code></article>
+      <article class="dica"><span>02</span><h2>Seja específico</h2><p>Escolha nomes que expliquem a função do elemento.</p><code>.card-receita { padding: 1rem; }</code></article>
+      <article class="dica"><span>03</span><h2>Evite seletores longos</h2><p>Menos dependência da estrutura torna a alteração mais simples.</p><code>.menu a { text-decoration: none; }</code></article>
+      <article class="dica"><span>04</span><h2>Use estados</h2><p>O seletor <code>:hover</code> mostra uma mudança ao passar o mouse.</p><code>.link:hover { color: tomato; }</code></article>
+      <article class="dica"><span>05</span><h2>Não use !important</h2><p>Organize a cascata e a especificidade antes de recorrer a ele.</p><code>.aviso { background: gold; }</code></article>
+    </section>
+    <footer>Pratique: dê nomes claros às classes e teste cada seletor no navegador.</footer>
+  </main>
+</body>
+</html>

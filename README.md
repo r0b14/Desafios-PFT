@@ -53,6 +53,7 @@ O conteúdo foi organizado para que cada exercício trabalhe um conjunto pequeno
 | [HTML1](./HTML1/) | Estrutura, semântica, formatação, mídias, SVG, formulários e eventos | ✅ Aulas 01–10 implementadas |
 | [HTML2](./HTML2/) | Continuação dos fundamentos e recursos do HTML | 🧱 Estrutura preparada |
 | [CSS-1](./CSS-1/) | Cores, fundos, bordas, espaçamentos, Box Model e fontes | 🚧 Aulas 02–06 implementadas |
+| [CSS-2](./CSS-2/) | Seletores, Box Model, fontes, ícones e links | ✅ Aulas 01–07 implementadas |
 | [JS-1](./JS-1/) | Variáveis, condicionais, repetições, funções e arrays | ✅ Projetos disponíveis |
 | [JS-2](./JS-2/) | DOM, eventos, callbacks, módulos e aplicações interativas | ✅ Projetos disponíveis |
 | [JS-3](./JS-3/) | Conteúdos avançados de JavaScript | 🚧 Em evolução |
@@ -115,6 +116,7 @@ flowchart LR
 ```text
 Desafios-PFT/
 ├── CSS-1/          # Miniprojetos de estilização
+├── CSS-2/          # Continuação dos miniprojetos de CSS
 ├── HTML1/          # Primeira trilha de HTML
 ├── HTML2/          # Segunda trilha de HTML
 ├── JS-1/           # Fundamentos de JavaScript

@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 16px; background: #eef5ff; color: #172554; font-family: Arial, sans-serif; }
+.infografico { max-width: 950px; margin: auto; overflow: hidden; border-radius: 18px; background: white; box-shadow: 0 12px 35px #bfdbfe; }
+header { padding: 42px; color: white; background: linear-gradient(135deg, #1d4ed8, #7c3aed); }
+h1 { margin: 8px 0; font-size: clamp(2rem, 5vw, 3.4rem); } .etiqueta { margin: 0; font-weight: bold; letter-spacing: 2px; }
+.dicas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; padding: 30px; }
+.dica { padding: 22px; border: 2px solid #dbeafe; border-radius: 14px; } .dica:first-child { grid-column: span 1; }
+.dica span { color: #7c3aed; font-size: 1.5rem; font-weight: bold; } .dica h2 { margin: 6px 0; }
+code { display: block; padding: 10px; border-radius: 7px; color: #075985; background: #e0f2fe; font-size: .85rem; }
+footer { padding: 20px 30px; text-align: center; font-weight: bold; background: #fef3c7; }
