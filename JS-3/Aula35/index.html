@@ -1,0 +1,7 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boas práticas de código</title><link rel="stylesheet" href="style.css"></head><body><main><p class="tag">AULA 35</p><h1>Revisor de código</h1><p>Compare o exemplo problemático com uma versão mais legível e organizada.</p><div class="colunas"><section><h2>Antes</h2><pre>let x=10
+function calc(a,b){if(a&gt;0){return a+b}else{return 0}}</pre></section><section><h2>Depois</h2><pre>const pontuacaoInicial = 10;
+
+function calcularSoma(valorA, valorB) {
+  if (valorA &lt;= 0) return 0;
+  return valorA + valorB;
+}</pre></section></div><button id="revisar">Ver pontos da revisão</button><ul id="lista" hidden><li>Nomes claros explicam o propósito de variáveis e funções.</li><li>Indentação e espaços deixam a estrutura visível.</li><li>Evitar aninhamento excessivo torna a leitura mais simples.</li><li><code>const</code> é usado quando a variável não será reatribuída.</li></ul></main><script src="script.js"></script></body></html>
