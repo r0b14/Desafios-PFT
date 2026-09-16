@@ -56,7 +56,7 @@ O conteúdo foi organizado para que cada exercício trabalhe um conjunto pequeno
 | [CSS-2](./CSS-2/) | Seletores, Box Model, fontes, ícones e links | ✅ Aulas 01–07 implementadas |
 | [JS-1](./JS-1/) | Variáveis, condicionais, repetições, funções e arrays | ✅ Projetos disponíveis |
 | [JS-2](./JS-2/) | DOM, eventos, callbacks, módulos e aplicações interativas | ✅ Projetos disponíveis |
-| [JS-3](./JS-3/) | Tratamento de erros e boas práticas em JavaScript | ✅ Aulas 31–35 implementadas |
+| [JS-3](./JS-3/) | Tratamento de erros, boas práticas e redução de complexidade | ✅ Aulas 31–37 implementadas |
 | [Livro-JS](./Livro-JS/) | Exercícios organizados por capítulos | ✅ Material complementar |
 | [docs](./docs/) | Página e documentação do projeto | 🚧 Em evolução |
 

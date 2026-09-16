@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; display: grid; place-items: center; margin: 0; padding: 20px; background: #eef2ff; color: #1e1b4b; font-family: Arial, sans-serif; }
+main { width: min(680px, 100%); padding: 34px; border-radius: 18px; background: #fff; box-shadow: 0 14px 32px #c7d2fe; }
+.tag { margin: 0; color: #4f46e5; font-weight: bold; letter-spacing: 1px; } h1 { margin: 8px 0; }
+.campos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; } label { font-weight: bold; }
+input, select, button, output { width: 100%; padding: 12px; margin-top: 7px; border-radius: 8px; font: inherit; } input, select { border: 1px solid #a5b4fc; }
+button { border: 0; cursor: pointer; color: #fff; background: #4f46e5; font-weight: bold; } button:hover { background: #3730a3; }
+output { display: block; min-height: 70px; margin-top: 20px; background: #e0e7ff; font-size: 1.1rem; font-weight: bold; }
+@media (max-width: 580px) { .campos { grid-template-columns: 1fr; } }
