@@ -1,6 +1,16 @@
-# Aula 20 — Estrutura inicial
+# Aula 20 — Layout de site
 
-- Reúna os conceitos estudados: seletores, cores, tipografia e espaçamento.
-- Organize a página em seções semânticas e estilize cada uma com classes.
-- Mantenha os arquivos separados conforme sua responsabilidade.
-- Revise o resultado em diferentes larguras de tela antes de concluir.
+## Resumo
+
+Um layout de site organiza áreas como cabeçalho, navegação, conteúdo principal, barra lateral e rodapé.
+
+## Parte técnica
+
+- `header`, `nav`, `main`, `aside` e `footer` organizam a estrutura da página.
+- `float: left` posiciona o conteúdo principal à esquerda.
+- `float: right` posiciona a barra lateral à direita.
+- `clear: both` no rodapé faz com que ele apareça abaixo das duas colunas.
+
+## O que o miniprojeto atende
+
+Layout simples para um site de museu com menu, conteúdo principal, barra lateral com informações para visita e rodapé.

@@ -1,1 +1,68 @@
-/* Estilos iniciais da Aula 20. */
+body {
+  margin: 0;
+  background-color: #f4f0e8;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  padding: 25px;
+  background-color: #4b3b2a;
+  color: white;
+  text-align: center;
+}
+
+header h1,
+header p {
+  margin: 5px;
+}
+
+nav {
+  background-color: #c98f4d;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #9b652d;
+}
+
+.pagina {
+  width: 900px;
+  margin: 25px auto;
+}
+
+main {
+  float: left;
+  width: 620px;
+  padding: 20px;
+  background-color: white;
+}
+
+main img {
+  width: 100%;
+}
+
+aside {
+  float: right;
+  width: 240px;
+  padding: 20px;
+  background-color: #e7d6bd;
+}
+
+aside h2,
+main h2 {
+  color: #7a4e25;
+}
+
+footer {
+  clear: both;
+}

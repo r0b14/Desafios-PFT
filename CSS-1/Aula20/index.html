@@ -1,16 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 20</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <h1>Aula 20</h1>
-        <p>Espaço reservado para o próximo projeto de CSS.</p>
-    </main>
-    <script src="script.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museu da Cidade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Museu da Cidade</h1>
+      <p>Histórias que fazem parte de nós.</p>
+    </header>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#exposicoes">Exposições</a>
+      <a href="#visita">Visite-nos</a>
+    </nav>
+
+    <div class="pagina" id="inicio">
+      <main>
+        <section id="exposicoes">
+          <h2>Exposição em destaque</h2>
+          <img
+            src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=800&q=80"
+            alt="Sala de um museu com obras expostas"
+          />
+          <h3>Memórias da nossa cidade</h3>
+          <p>
+            Conheça objetos, fotografias e relatos que mostram como a cidade se
+            transformou ao longo dos anos.
+          </p>
+          <p>A exposição fica aberta de terça a domingo, das 9h às 17h.</p>
+        </section>
+      </main>
+
+      <aside id="visita">
+        <h2>Planeje sua visita</h2>
+        <p><strong>Endereço:</strong><br />Rua das Artes, 100</p>
+        <p><strong>Entrada:</strong><br />Gratuita aos domingos</p>
+        <h3>Outras exposições</h3>
+        <ul>
+          <li>Arte Popular</li>
+          <li>Fotografia Antiga</li>
+          <li>História do Bairro</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <p>Miniprojeto da Aula 20 — Museu da Cidade</p>
+    </footer>
+  </body>
 </html>

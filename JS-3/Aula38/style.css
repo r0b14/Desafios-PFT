@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #eef2ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main {
+  width: 500px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+}
+.aula {
+  color: #4338ca;
+  font-weight: bold;
+}
+#contador {
+  font-size: 56px;
+  font-weight: bold;
+}
+button {
+  padding: 12px 18px;
+  border: 0;
+  background-color: #4338ca;
+  color: white;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: #999999;
+}

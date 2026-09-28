@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #fff7ed;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main {
+  width: 520px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+}
+.aula {
+  color: #c2410c;
+  font-weight: bold;
+}
+select,
+button {
+  padding: 10px;
+  font: inherit;
+}
+button {
+  border: 0;
+  background-color: #c2410c;
+  color: white;
+  cursor: pointer;
+}
+#mensagem {
+  min-height: 24px;
+  font-weight: bold;
+}
