@@ -1,1 +1,29 @@
-/* Estilos iniciais da Aula 16. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff3e0;
+  text-align: center;
+}
+main {
+  width: 750px;
+  margin: 30px auto;
+}
+h1 {
+  color: #a64b2a;
+}
+figure {
+  display: inline-block;
+  width: 210px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+img {
+  width: 190px;
+  opacity: 0.65;
+}
+img:hover {
+  opacity: 1;
+}
+figcaption {
+  margin-top: 8px;
+}

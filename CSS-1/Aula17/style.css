@@ -1,1 +1,25 @@
-/* Estilos iniciais da Aula 17. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8ef;
+}
+main {
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+}
+a[href^="https"] {
+  color: #0066cc;
+}
+a[href^="mailto"] {
+  color: #a64b2a;
+}
+li[data-tipo="prato"] {
+  color: #2f6b32;
+}
+li[data-tipo="sobremesa"] {
+  color: #a64b2a;
+}
+span {
+  font-weight: bold;
+}

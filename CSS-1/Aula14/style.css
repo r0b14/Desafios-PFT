@@ -1,1 +1,22 @@
-/* Estilos iniciais da Aula 14. */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+main {
+  width: 750px;
+  margin: 30px auto;
+}
+figure {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+img {
+  width: 180px;
+}
+figure:hover {
+  opacity: 0.7;
+}

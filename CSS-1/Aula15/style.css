@@ -1,1 +1,23 @@
-/* Estilos iniciais da Aula 15. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8ef;
+  text-align: center;
+}
+main {
+  width: 700px;
+  margin: 30px auto;
+}
+article {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+}
+article img {
+  display: block;
+  width: 180px;
+  margin: auto;
+}
+h1,
+h2 {
+  color: #a64b2a;
+}

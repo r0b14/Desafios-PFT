@@ -1,1 +1,37 @@
-/* Estilos iniciais da Aula 19. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+main {
+  width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+}
+main {
+  counter-reset: secoes;
+}
+section {
+  counter-increment: secoes;
+  margin-top: 25px;
+}
+section h2::before {
+  content: "Seção " counter(secoes) ": ";
+  color: #0066cc;
+}
+ol {
+  counter-reset: itens;
+  list-style: none;
+  padding-left: 0;
+}
+ol li {
+  counter-increment: itens;
+  margin: 8px 0;
+}
+ol li::before {
+  content: counter(itens) ". ";
+  font-weight: bold;
+}
+ol ol {
+  margin-left: 25px;
+}

@@ -1,6 +1,13 @@
-# Aula 18 — Estrutura inicial
+# Aula 18 — Formulários
 
-- Planeje a paleta de cores antes de aplicar o CSS.
-- Use `max-width` para evitar linhas de texto muito longas.
-- Prefira propriedades claras e valores simples durante o aprendizado.
-- O DevTools do navegador ajuda a inspecionar o Box Model e as regras ativas.
+> A imagem com o enunciado da Aula 18 não foi enviada. Este exemplo simples foi criado como uma prática de estilização de formulário, seguindo a sequência das aulas.
+
+## Parte técnica
+
+- `label` identifica cada campo.
+- `input` recebe os dados da pessoa usuária.
+- `display: block` coloca cada campo em sua própria linha.
+
+## O que o miniprojeto apresenta
+
+Um formulário curto para reserva de mesa em um restaurante.

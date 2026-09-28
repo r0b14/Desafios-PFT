@@ -1,6 +1,15 @@
-# Aula 17 — Estrutura inicial
+# Aula 17 — Seletores de atributo
 
-- A estrutura HTML informa o significado; o CSS define a aparência.
-- Use espaçamento consistente para tornar o layout equilibrado.
-- Títulos, textos e links precisam ter estilos fáceis de distinguir.
-- Teste os estados de interação, como `:hover`, quando houver links ou botões.
+## Resumo
+
+Seletores de atributo escolhem elementos de acordo com um atributo no HTML.
+
+## Parte técnica
+
+- `a[href^="https"]` seleciona links cujo `href` começa com `https`.
+- `a[href^="mailto"]` seleciona links de e-mail.
+- `li[data-tipo="prato"]` seleciona itens com esse valor no atributo `data-tipo`.
+
+## O que o miniprojeto atende
+
+Cardápio de restaurante com links, preços e itens personalizados por seletores de atributo.

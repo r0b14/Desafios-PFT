@@ -1,6 +1,14 @@
-# Aula 16 — Estrutura inicial
+# Aula 16 — Opacidade
 
-- Use classes para aplicar estilos a grupos de elementos.
-- Mantenha o CSS organizado por blocos da página.
-- Componentes semelhantes devem compartilhar regras comuns.
-- Revise a responsividade reduzindo a largura da janela do navegador.
+## Resumo
+
+`opacity` controla a transparência de um elemento. O valor `1` significa totalmente visível e `0` totalmente transparente.
+
+## Parte técnica
+
+- As imagens começam com `opacity: 0.65`.
+- A regra `img:hover` muda a opacidade para `1` ao passar o mouse.
+
+## O que o miniprojeto atende
+
+Menu simples de restaurante com uma galeria de três pratos e efeito de opacidade.
