@@ -1,0 +1,23 @@
+body {
+  background-color: #f5fae9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+main {
+  width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+}
+.sobre img {
+  float: left;
+  width: 220px;
+  margin: 0 20px 10px 0;
+}
+.sobre {
+  overflow: auto;
+}
+h1,
+h2 {
+  color: #397033;
+}

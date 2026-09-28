@@ -1,0 +1,42 @@
+body {
+  background-color: #dff4df;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #78ae5a;
+  color: white;
+}
+
+main img {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  width: 280px;
+  z-index: 1;
+}
+
+.descricao {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  width: 240px;
+  padding: 15px;
+  background-color: white;
+  color: #285226;
+  z-index: 2;
+}
+
+.numero {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 3;
+  font-size: 24px;
+  font-weight: bold;
+}

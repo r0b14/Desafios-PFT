@@ -1,0 +1,27 @@
+body {
+  background-color: #eff8e9;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 600px;
+  margin: 30px auto;
+}
+.caixa,
+.horizontal {
+  padding: 15px;
+  border: 2px solid #5a9b47;
+  background-color: white;
+}
+.caixa {
+  height: 80px;
+}
+.auto {
+  overflow: auto;
+}
+.hidden {
+  overflow: hidden;
+}
+.horizontal {
+  white-space: nowrap;
+  overflow-x: auto;
+}

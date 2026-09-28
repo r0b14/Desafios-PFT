@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+}
+
+header {
+  padding: 25px;
+  background-color: #a64b2a;
+  color: white;
+  text-align: center;
+}
+header a {
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+article {
+  display: inline-block;
+  width: 210px;
+  margin: 8px;
+  padding: 12px;
+  border: 1px solid #e0b89c;
+  vertical-align: top;
+}
