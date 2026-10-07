@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #eef2ff;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 650px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #4338ca;
+  font-weight: bold;
+}
+button {
+  padding: 10px 14px;
+  border: 0;
+  background: #4338ca;
+  color: white;
+  cursor: pointer;
+}
+pre {
+  padding: 15px;
+  background: #eef2ff;
+  white-space: pre-wrap;
+}

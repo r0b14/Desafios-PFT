@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #eef2ff;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 560px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #4338ca;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  gap: 8px;
+}
+input {
+  flex: 1;
+  padding: 10px;
+}
+button {
+  padding: 10px 14px;
+  border: 0;
+  background: #4338ca;
+  color: white;
+  cursor: pointer;
+}
+#mensagem {
+  min-height: 22px;
+  color: #047857;
+}
+li {
+  margin: 10px 0;
+}
+li button {
+  float: right;
+  background: #dc2626;
+}

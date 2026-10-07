@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busca de posts</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 45</p>
+      <h1>Busca de posts</h1>
+      <p>O formulário gera parâmetros de URL e envia os campos com FormData.</p>
+      <form id="formulario">
+        <label
+          >Usuário
+          <input name="userId" type="number" min="1" value="1" /></label
+        ><label
+          >Título
+          <input name="title" required placeholder="Meu novo post" /></label
+        ><button>Buscar posts</button>
+      </form>
+      <p id="url-gerada"></p>
+      <p id="mensagem"></p>
+      <ul id="posts"></ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

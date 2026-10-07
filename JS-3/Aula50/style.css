@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f0fdf4;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 520px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #15803d;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin: 12px 0;
+}
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-top: 4px;
+}
+button {
+  padding: 10px 14px;
+  border: 0;
+  background: #15803d;
+  color: white;
+  cursor: pointer;
+}
+#resultado {
+  font-weight: bold;
+}

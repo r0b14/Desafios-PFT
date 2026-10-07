@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #eff6ff;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 560px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+select,
+button {
+  padding: 10px;
+  font: inherit;
+}
+button {
+  border: 0;
+  background: #1d4ed8;
+  color: white;
+  cursor: pointer;
+}
+pre {
+  padding: 15px;
+  background: #eff6ff;
+  white-space: pre-wrap;
+}

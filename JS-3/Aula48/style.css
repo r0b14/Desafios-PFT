@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #fdf2f8;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #be185d;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin: 12px 0;
+}
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-top: 4px;
+}
+textarea {
+  height: 80px;
+}
+button {
+  padding: 10px 14px;
+  border: 0;
+  background: #be185d;
+  color: white;
+  cursor: pointer;
+}
+pre {
+  white-space: pre-wrap;
+}

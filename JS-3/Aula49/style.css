@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #ecfeff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+main {
+  width: 540px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+}
+.aula {
+  color: #0e7490;
+  font-weight: bold;
+}
+input,
+button {
+  padding: 10px;
+  font: inherit;
+}
+button {
+  border: 0;
+  background: #0e7490;
+  color: white;
+  cursor: pointer;
+}
+#resultado {
+  font-size: 22px;
+  font-weight: bold;
+}
