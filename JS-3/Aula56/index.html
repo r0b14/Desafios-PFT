@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 56 - Inventário de Loja Virtual</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 56</p>
+      <h1>Inventário da Loja Virtual</h1>
+      <p class="descricao">
+        Gerenciador de estoque e preços através de manipulação de objetos em JavaScript.
+      </p>
+
+      <!-- Formulário de cadastro de produtos -->
+      <div class="bloco-formulario">
+        <h3>Cadastrar / Modificar Produto:</h3>
+        <label for="prod-codigo">Código do produto:</label>
+        <input type="number" id="prod-codigo" placeholder="Ex.: 101" />
+
+        <label for="prod-nome">Nome do produto:</label>
+        <input type="text" id="prod-nome" placeholder="Ex.: Fone Bluetooth" />
+
+        <div class="linha-dupla">
+          <div>
+            <label for="prod-preco">Preço (R$):</label>
+            <input type="number" id="prod-preco" step="0.01" placeholder="Ex.: 89.90" />
+          </div>
+          <div>
+            <label for="prod-qtd">Quantidade:</label>
+            <input type="number" id="prod-qtd" placeholder="Ex.: 15" />
+          </div>
+        </div>
+
+        <div class="botoes-grade">
+          <button id="btn-adicionar">Adicionar Produto</button>
+          <button id="btn-atualizar-qtd">Atualizar Quantidade</button>
+          <button id="btn-atualizar-preco">Atualizar Preço</button>
+          <button id="btn-verificar">Verificar se Existe</button>
+          <button id="btn-remover" class="btn-perigo">Remover Produto</button>
+        </div>
+      </div>
+
+      <!-- Filtro por preço máximo -->
+      <div class="bloco-filtro">
+        <label for="filtro-preco">Filtrar produtos mais baratos que (R$):</label>
+        <input type="number" id="filtro-preco" value="100" />
+        <button id="btn-filtrar-baratos">Buscar Produtos</button>
+      </div>
+
+      <!-- Feedback de status -->
+      <p id="mensagem-status"></p>
+
+      <!-- Tabela do Inventário -->
+      <h2>Produtos em estoque:</h2>
+      <table id="tabela-estoque">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Preço (R$)</th>
+            <th>Estoque</th>
+          </tr>
+        </thead>
+        <tbody id="corpo-tabela"></tbody>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 55 - Plantações de Arrayville</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 55</p>
+      <h1>Colheitas de Arrayville</h1>
+      <p class="descricao">
+        Sistema de controle de colheitas com a classe <code>Plantacoes</code>, ordenação e comparação de arrays.
+      </p>
+
+      <!-- Painel das listas atuais -->
+      <div class="colheitas-grade">
+        <div class="caixa-lista">
+          <h3>Frutas Colhidas:</h3>
+          <ul id="lista-frutas"></ul>
+        </div>
+        <div class="caixa-lista">
+          <h3>Vegetais Colhidos:</h3>
+          <ul id="lista-vegetais"></ul>
+        </div>
+      </div>
+
+      <!-- Botões de Operações -->
+      <div class="botoes-grade">
+        <button id="btn-ordenar">Ordenar em Ordem Alfabética</button>
+        <button id="btn-maior">Qual lista tem maior tamanho?</button>
+        <button id="btn-vazia">Alguma lista está vazia?</button>
+        <button id="btn-comparar">Comparar frutas com nova remessa</button>
+      </div>
+
+      <!-- Painel de Resultados -->
+      <h2>Status da análise:</h2>
+      <div id="resultado-painel">Clique em uma ação acima para analisar a produção agrícola.</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+/* Estilos simples e de alta legibilidade para Ensino Médio */
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.aula {
+  color: #4f46e5;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #1e1b4b;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.bloco-problema {
+  background-color: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.bloco-problema p {
+  margin: 4px 0 0 0;
+}
+
+.botoes-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button.btn-paradigma {
+  padding: 10px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  border: 1px solid #c7d2fe;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #475569;
+  cursor: pointer;
+}
+
+button.btn-paradigma:hover {
+  background-color: #e2e8f0;
+}
+
+button.btn-paradigma.ativo {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-color: #4f46e5;
+}
+
+.painel-codigo {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.painel-codigo h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: #1e1b4b;
+}
+
+#ferramentas-paradigma {
+  font-size: 0.9rem;
+  color: #4338ca;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+pre {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 14px;
+  border-radius: 6px;
+  font-family: Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+#resultado-execucao {
+  margin-top: 14px;
+  padding: 10px;
+  background-color: #e0e7ff;
+  border-left: 4px solid #4f46e5;
+  font-weight: bold;
+  color: #1e1b4b;
+  font-size: 0.95rem;
+}

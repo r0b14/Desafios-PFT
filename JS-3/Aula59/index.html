@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 59 - Paradigmas de Programação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 59</p>
+      <h1>Paradigmas de Programação</h1>
+      <p class="descricao">
+        Comparação prática dos paradigmas <strong>Imperativo</strong>, <strong>Funcional</strong> e <strong>Orientado a Objetos</strong> em JavaScript.
+      </p>
+
+      <!-- Lista base do problema -->
+      <div class="bloco-problema">
+        <strong>Problema prático:</strong>
+        <p>Calcular o total de uma compra dando 10% de desconto para produtos acima de R$ 50,00.</p>
+        <p><small>Produtos: Mochila (R$ 80), Caderno (R$ 25), Estojo (R$ 15), Tênis (R$ 120).</small></p>
+      </div>
+
+      <!-- Abas para alternar entre os paradigmas -->
+      <div class="botoes-grade">
+        <button id="btn-imperativo" class="btn-paradigma ativo">1. Imperativo</button>
+        <button id="btn-funcional" class="btn-paradigma">2. Funcional</button>
+        <button id="btn-oo" class="btn-paradigma">3. Orientado a Objetos</button>
+      </div>
+
+      <!-- Área de exibição do código e resultado -->
+      <div class="painel-codigo">
+        <h3 id="titulo-paradigma">Paradigma Imperativo</h3>
+        <p id="ferramentas-paradigma"><strong>Ferramentas usadas:</strong> for, if, let (mutação de estado)</p>
+        <pre><code id="bloco-codigo">// Código aqui...</code></pre>
+        <div id="resultado-execucao">Total final calculado: ...</div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

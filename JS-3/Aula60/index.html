@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Integrador: CRUD com localStorage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 60</p>
+      <h1>Gerenciador de Metas (CRUD)</h1>
+
+      <form id="form-meta">
+        <label
+          >Nova meta ou tarefa
+          <input id="input-meta" placeholder="Ex: Concluir módulo JS-3" required />
+        </label>
+        <button type="submit" id="btn-adicionar">Adicionar meta</button>
+      </form>
+
+      <div class="filtros">
+        <button type="button" class="filtro-btn ativo" data-filtro="todos">Todas</button>
+        <button type="button" class="filtro-btn" data-filtro="pendentes">Pendentes</button>
+        <button type="button" class="filtro-btn" data-filtro="concluidas">Concluídas</button>
+      </div>
+
+      <ul id="lista-metas"></ul>
+
+      <div class="rodape-crud">
+        <span id="contador-metas">Total: 0 | Concluídas: 0</span>
+        <button type="button" id="btn-limpar-todas" class="link-perigo">Limpar concluídas</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #f0fdf4;
+  font-family: Arial, sans-serif;
+}
+main {
+  width: 560px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.aula {
+  color: #166534;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-top: 4px;
+}
+button {
+  padding: 9px 14px;
+  border: 0;
+  background: #166534;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+button:hover {
+  background: #14532d;
+}
+.filtros {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0;
+}
+.filtro-btn {
+  background: #e2e8f0;
+  color: #334155;
+  margin: 0;
+  padding: 6px 12px;
+}
+.filtro-btn.ativo {
+  background: #166534;
+  color: white;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+li.concluida span.texto {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+span.texto {
+  flex: 1;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.btn-remover {
+  background: #ef4444;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.btn-remover:hover {
+  background: #dc2626;
+}
+.rodape-crud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+.link-perigo {
+  background: transparent;
+  color: #dc2626;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+.link-perigo:hover {
+  background: transparent;
+  color: #991b1b;
+}

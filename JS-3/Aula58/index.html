@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 58 - Agenda TimeMaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 58</p>
+      <h1>Agenda "TimeMaster"</h1>
+      <p class="descricao">
+        Gerenciador de compromissos com a classe <code>Eventos</code> e manipulação de datas e horas.
+      </p>
+
+      <!-- Formulário de cadastro de evento -->
+      <div class="bloco-formulario">
+        <h3>Agendar Novo Evento:</h3>
+        <label for="evento-titulo">Título do evento:</label>
+        <input type="text" id="evento-titulo" placeholder="Ex.: Feira de Ciências" />
+
+        <label for="evento-data">Data e Hora:</label>
+        <input type="datetime-local" id="evento-data" />
+
+        <label for="evento-local">Local:</label>
+        <input type="text" id="evento-local" placeholder="Ex.: Auditório Principal ou Online" />
+
+        <button id="btn-adicionar-evento">Adicionar Evento</button>
+      </div>
+
+      <!-- Filtros de Consulta -->
+      <div class="botoes-grade">
+        <button id="btn-todos">Todos os Eventos</button>
+        <button id="btn-passados">Eventos que Já Passaram</button>
+        <button id="btn-proximo-mes">Eventos do Próximo Mês</button>
+      </div>
+
+      <!-- Feedback de status -->
+      <p id="mensagem-status"></p>
+
+      <!-- Lista de Eventos -->
+      <h2>Eventos cadastrados:</h2>
+      <ul id="lista-eventos"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 51 - Decorações de Natal Recife</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 51</p>
+      <h1>Decorações de Natal - Recife</h1>
+      <p class="descricao">
+        Gerenciamento de tarefas natalinas usando métodos de array e manipulação manual.
+      </p>
+
+      <!-- Campo para digitar uma nova tarefa -->
+      <label for="input-tarefa">Nome da tarefa:</label>
+      <input
+        type="text"
+        id="input-tarefa"
+        placeholder="Ex.: Instalar árvore gigante no Marco Zero"
+      />
+
+      <!-- Botões de ação para adicionar e remover -->
+      <div class="botoes-grade">
+        <button id="btn-add-inicio">Adicionar no Início (unshift)</button>
+        <button id="btn-add-fim">Adicionar no Fim (push)</button>
+        <button id="btn-rem-inicio" class="btn-alerta">Remover do Início (shift)</button>
+        <button id="btn-rem-fim-manual" class="btn-perigo">Remover do Fim (Manual)</button>
+      </div>
+
+      <!-- Feedback de ações -->
+      <p id="mensagem-status"></p>
+
+      <!-- Lista de tarefas exibida na tela -->
+      <h2>Tarefas agendadas:</h2>
+      <ol id="lista-tarefas"></ol>
+
+      <!-- Área de teste com duas instâncias -->
+      <div class="painel-teste">
+        <h3>Testes no Console e Demonstração:</h3>
+        <p>Duas instâncias foram criadas no código: <strong>Polo Marco Zero</strong> e <strong>Polo Boa Viagem</strong>. Abra o console do navegador (F12) para conferir os testes automáticos!</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 54 - Apuração do Carnaval RJ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 54</p>
+      <h1>Carnaval do Rio de Janeiro</h1>
+      <p class="descricao">
+        Sistema de busca e validação de notas com <code>find</code>, <code>findIndex</code>, <code>includes</code>, <code>every</code> e <code>some</code>.
+      </p>
+
+      <!-- Visualização das notas -->
+      <div class="bloco-info">
+        <strong>Notas das escolas de samba:</strong>
+        <p id="exibicao-notas"></p>
+      </div>
+
+      <!-- Campo de entrada para testes de valor -->
+      <label for="valor-teste">Valor da nota para consulta:</label>
+      <input type="number" id="valor-teste" value="9.0" step="0.1" min="0" max="10" />
+
+      <!-- Botões das operações requeridas -->
+      <div class="botoes-grade">
+        <button id="btn-find">Primeira nota acima do valor (find)</button>
+        <button id="btn-findindex">Índice da primeira nota abaixo (findIndex)</button>
+        <button id="btn-includes">Nota exata existe na lista? (includes)</button>
+        <button id="btn-every">Todas acima da média geral? (every)</button>
+        <button id="btn-some">Alguma nota abaixo do valor? (some)</button>
+      </div>
+
+      <!-- Painel de Resultados -->
+      <h2>Resultado da análise:</h2>
+      <div id="resultado-painel">Selecione uma das opções acima para verificar as notas.</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

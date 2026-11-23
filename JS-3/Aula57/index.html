@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 57 - Cronômetro de Cozinha do Chef</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 57</p>
+      <h1>Cronômetro de Cozinha do Chef</h1>
+      <p class="descricao">
+        Controle de tempo regressivo com <code>setInterval</code> e <code>clearInterval</code>.
+      </p>
+
+      <!-- Painel do Cronômetro -->
+      <div class="painel-cronometro">
+        <span id="display-tempo">00:00</span>
+        <p id="status-prato">Aguardando início do preparo...</p>
+      </div>
+
+      <!-- Configuração de tempo -->
+      <label for="segundos-iniciais">Tempo de preparo (em segundos):</label>
+      <input type="number" id="segundos-iniciais" value="30" min="1" max="3600" />
+
+      <!-- Botões de controle -->
+      <div class="botoes-grade">
+        <button id="btn-iniciar">Iniciar Preparo</button>
+        <button id="btn-pausar" class="btn-alerta" disabled>Pausar</button>
+        <button id="btn-finalizar" class="btn-perigo" disabled>Finalizar / Resetar</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

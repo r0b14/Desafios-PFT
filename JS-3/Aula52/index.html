@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 52 - Catálogo da Biblioteca Saber Infinito</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 52</p>
+      <h1>Biblioteca "Saber Infinito"</h1>
+      <p class="descricao">
+        Reorganização do acervo usando corte, inserção, remoção e spread em arrays.
+      </p>
+
+      <!-- Formulário de operações -->
+      <div class="formulario">
+        <label for="titulo-livro">Título do livro:</label>
+        <input type="text" id="titulo-livro" placeholder="Ex.: Dom Casmurro" />
+
+        <label for="posicao-livro">Posição / Índice (inicia em 0):</label>
+        <input type="number" id="posicao-livro" min="0" value="0" />
+
+        <div class="botoes-grade">
+          <button id="btn-substituir">Substituir na Posição</button>
+          <button id="btn-add-posicao">Inserir na Posição</button>
+          <button id="btn-add-inicio">Adicionar no Início</button>
+          <button id="btn-add-final">Adicionar no Final</button>
+          <button id="btn-remover-posicao" class="btn-alerta">Remover da Posição</button>
+          <button id="btn-combinar-secoes" class="btn-destaque">Combinar Seções (Spread)</button>
+        </div>
+      </div>
+
+      <!-- Feedback de ações -->
+      <p id="mensagem-status"></p>
+
+      <!-- Exibição do acervo atual -->
+      <h2>Catálogo de livros (Seção Principal):</h2>
+      <ol id="lista-livros"></ol>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
