@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.aula {
+  color: #c026d3;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+/* Container com flex-wrap */
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha */
+  gap: 12px;
+  background-color: #fdf4ff;
+  border: 1px solid #f5d0fe;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.card-item {
+  width: 140px;
+  height: 80px;
+  background-color: #c026d3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Alterando a ordem com a propriedade order */
+.item-destaque {
+  order: -1; /* Força este item a vir antes de todos os outros */
+  background-color: #86198f;
+}

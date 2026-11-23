@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 27 - Flexbox: Grow e Basis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 27</p>
+      <h1>Flexbox: Grow, Shrink e Basis</h1>
+      <p class="descricao">Distribuição inteligente de espaço entre barra lateral e conteúdo principal.</p>
+
+      <div class="layout-blog">
+        <aside class="sidebar">
+          <h3>Barra Lateral</h3>
+          <p>Tamanho fixo de 180px com <code>flex: 0 0 180px</code>.</p>
+        </aside>
+
+        <section class="conteudo-principal">
+          <h3>Conteúdo Principal</h3>
+          <p>Este bloco se expande automaticamente para ocupar 100% do espaço restante usando <code>flex: 1</code>.</p>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+/* 1. ESTILOS BASE: FOCO NO CELULAR (MOBILE) */
+body {
+  margin: 0;
+  padding: 16px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.aula {
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.descricao {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+/* Mobile: lista em 1 coluna */
+.grid-noticias {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.noticia {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+.noticia h3 {
+  margin-top: 0;
+  color: #15803d;
+}
+
+/* 2. EXPANSÃO PARA TELAS MAIORES: MIN-WIDTH */
+@media (min-width: 600px) {
+  main {
+    max-width: 640px;
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Em telas médias/grandes, transforma em 3 colunas */
+  .grid-noticias {
+    flex-direction: row;
+  }
+
+  .noticia {
+    flex: 1;
+  }
+}

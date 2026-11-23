@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 38 - Formulários Modernos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 38</p>
+      <h1>Formulário com Estilo Moderno</h1>
+      <p class="descricao">Campos elegantes com feedback visual ao digitar e focar.</p>
+
+      <form class="form-moderno" onsubmit="event.preventDefault();">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required />
+
+        <label for="email">E-mail de contato:</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com" required />
+
+        <label for="nivel">Interesse no curso:</label>
+        <select id="nivel">
+          <option>Iniciante em Front-end</option>
+          <option>Intermediário</option>
+          <option>Avançado</option>
+        </select>
+
+        <button type="submit" class="btn-enviar">Enviar Inscrição</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

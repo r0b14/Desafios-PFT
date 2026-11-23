@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.aula {
+  color: #4f46e5;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.formas-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.forma {
+  background-color: #e0e7ff;
+  border: 2px solid #4f46e5;
+  color: #312e81;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 1. Cantos arredondados suaves */
+.forma-suave {
+  width: 130px;
+  height: 90px;
+  border-radius: 8px;
+}
+
+/* 2. Formato pílula */
+.forma-pilula {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  height: 50px;
+}
+
+/* 3. Círculo perfeito */
+.forma-circulo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

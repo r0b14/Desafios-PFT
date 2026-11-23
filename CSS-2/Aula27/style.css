@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background-color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.aula {
+  color: #0d9488;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.layout-blog {
+  display: flex;
+  gap: 16px;
+}
+
+/* Barra lateral: não cresce (0), não encolhe (0), base fixa de 180px */
+.sidebar {
+  flex: 0 0 180px;
+  background-color: #f0fdfa;
+  border: 1px solid #99f6e4;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #0f766e;
+}
+
+/* Conteúdo principal: cresce para ocupar todo o resto (flex: 1) */
+.conteudo-principal {
+  flex: 1;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.conteudo-principal h3 {
+  margin-top: 0;
+  color: #1e293b;
+}

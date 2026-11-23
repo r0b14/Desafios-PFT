@@ -1,0 +1,154 @@
+/* VARIÁVEIS CSS GLOBAIS */
+:root {
+  --cor-primaria: #0f766e;
+  --cor-primaria-escura: #115e59;
+  --cor-secundaria: #f0fdfa;
+  --cor-texto: #1e293b;
+  --cor-texto-suave: #475569;
+  --cor-fundo: #f8fafc;
+  --raio: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 1. CABEÇALHO COM FLEXBOX */
+.cabecalho {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.barra-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.marca {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--cor-primaria);
+}
+
+.navegacao {
+  display: flex;
+  gap: 16px;
+}
+
+.navegacao a {
+  text-decoration: none;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+.navegacao a:hover {
+  color: var(--cor-primaria);
+}
+
+/* 2. HERO BANNER */
+.aula {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.hero {
+  background-color: var(--cor-secundaria);
+  border: 1px solid #ccfbf1;
+  border-radius: var(--raio);
+  padding: 36px 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #0f766e;
+}
+
+.hero-subtitulo {
+  color: var(--cor-texto-suave);
+  max-width: 520px;
+  margin: 0 auto 20px auto;
+}
+
+.btn-destaque {
+  padding: 12px 24px;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-destaque:hover {
+  background-color: var(--cor-primaria-escura);
+  transform: translateY(-2px);
+}
+
+/* 3. BENEFÍCIOS COM CSS GRID */
+.secao-beneficios h2 {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.grade-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.card-beneficio {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--raio);
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card-beneficio:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.icone {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-beneficio h3 {
+  margin-top: 0;
+  color: var(--cor-primaria);
+}
+
+/* 4. RODAPÉ */
+.rodape {
+  background-color: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 0.85rem;
+}

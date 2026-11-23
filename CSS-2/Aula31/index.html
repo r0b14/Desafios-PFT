@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 31 - Imagens e Enquadramento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 31</p>
+      <h1>Imagens com Object-Fit</h1>
+      <p class="descricao">Ajustando fotos sem distorcer as proporções originais.</p>
+
+      <div class="galeria-fotos">
+        <div class="foto-card">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+            alt="Bulbasaur"
+          />
+          <p>object-fit: cover</p>
+        </div>
+
+        <div class="foto-card">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+            alt="Charmander"
+          />
+          <p>aspect-ratio: 1 / 1</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

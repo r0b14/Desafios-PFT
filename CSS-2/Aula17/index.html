@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 17 - Pseudo-classes Interativas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <p class="aula">AULA 17</p>
+      <h1>Pseudo-classes: hover, active e focus</h1>
+      <p class="descricao">Feedback visual imediato quando o usuário interage com a página.</p>
+
+      <div class="grupo-interativo">
+        <label for="campo-nome">Campo de texto (:focus):</label>
+        <input type="text" id="campo-nome" placeholder="Clique ou use Tab para focar" />
+
+        <div class="botoes">
+          <button class="btn-interativo">Passe o mouse ou clique (:hover / :active)</button>
+          <a href="#" class="link-interativo">Link interativo com hover</a>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
