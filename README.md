@@ -103,11 +103,42 @@ flowchart LR
 | [05](./CSS-1/Aula05/) | Receitas em destaque | `outline` e `outline-offset` |
 | [06](./CSS-1/Aula06/) | Receitas com estilo | Propriedades de texto e fontes |
 
+### CSS 2
+
+| Aula | Projeto | Conceitos |
+| :---: | --- | --- |
+| [01](./CSS-2/Aula01/) | Infográfico CSS | Seletores, cascata e boas práticas |
+| [08](./CSS-2/Aula08/) | Catálogo com menus | Listas, menus horizontais e dropdown |
+| [11](./CSS-2/Aula11/) | Pokédex Chikorita | Posicionamento (`position: absolute`, `relative`) e `z-index` |
+| [24](./CSS-2/Aula24/) | Introdução ao Flexbox | `display: flex`, eixos e direção |
+| [28](./CSS-2/Aula28/) | Introdução ao CSS Grid | `display: grid`, colunas e linhas |
+| [33](./CSS-2/Aula33/) | Leitura confortável | Tema Claro / Escuro com Variáveis CSS (`var()`) |
+| [35](./CSS-2/Aula35/) | Portal de notícias | Design Responsivo e Mobile-First com `@media` |
+| [40](./CSS-2/Aula40/) | Landing Page Moderna | Projeto Integrador CSS completo |
+
+> 👉 [Confira a lista completa de todas as 40 aulas de CSS 2](./CSS-2/)
+
+### JavaScript 3
+
+| Aula | Projeto | Conceitos |
+| :---: | --- | --- |
+| [31](./JS-3/Aula31/) | Tratamento de erros | `try...catch`, captura e tratamento defensivo |
+| [39](./JS-3/Aula39/) | Promises e Async/Await | Assincronismo moderno em JavaScript |
+| [43](./JS-3/Aula43/) | Requisições HTTP com Fetch | `fetch()`, consumo de APIs REST e parsing JSON |
+| [46](./JS-3/Aula46/) | Classes e Orientação a Objetos | Classes, métodos, construtores e instâncias |
+| [51](./JS-3/Aula51/) | Decorações de Natal Recife | Manipulação de arrays: métodos nativos e manuais |
+| [54](./JS-3/Aula54/) | Carnaval do Rio de Janeiro | Métodos de busca e validação: `find`, `includes`, `every`, `some` |
+| [57](./JS-3/Aula57/) | Cronômetro de Cozinha do Chef | Funções temporais (`setInterval`, `clearInterval`) |
+| [60](./JS-3/Aula60/) | Gestor de Metas e Hábitos | Projeto Integrador: CRUD interativo com `localStorage` |
+
+> 👉 [Confira a lista completa de todas as 30 aulas de JavaScript 3 (31 a 60)](./JS-3/)
+
 ### Lógica e JavaScript
 
 - Os desafios de [Lógica](./Lógica/) trabalham entrada de dados, condicionais, repetições, coleções, funções e arquivos usando Python.
 - Os projetos de [JS-1](./JS-1/) transportam esses fundamentos para JavaScript.
 - Os exercícios de [JS-2](./JS-2/) avançam para páginas interativas, manipulação do DOM e eventos.
+- O módulo [JS-3](./JS-3/) aprofunda em tratamento de exceções, assincronismo, POO, métodos modernos de coleções e projetos práticos integrados.
 
 ---
 
